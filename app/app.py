@@ -27,10 +27,33 @@ except Exception:
 
 app = Flask(__name__)
 
-model = joblib.load("models/job_demand_model.pkl")
-tfidf = joblib.load("models/tfidf.pkl")
-le_loc = joblib.load("models/location_encoder.pkl")
-le_ind = joblib.load("models/industry_encoder.pkl")
+# Load models with robust path resolution for both local and Render deployment
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+MODEL_DIR = os.path.join(BASE_DIR, 'models')
+
+def load_model(filename):
+    """Load a joblib model file, trying multiple path strategies."""
+    paths_to_try = [
+        os.path.join(MODEL_DIR, filename),
+        os.path.join('models', filename),
+        os.path.join('/app/models', filename),
+    ]
+    for path in paths_to_try:
+        if os.path.exists(path):
+            print(f"[OK] Loading {filename} from {path}")
+            return joblib.load(path)
+    print(f"[WARNING] {filename} not found in any expected path: {paths_to_try}")
+    raise FileNotFoundError(f"Model file not found: {filename}")
+
+try:
+    model = load_model("job_demand_model.pkl")
+    tfidf = load_model("tfidf.pkl")
+    le_loc = load_model("location_encoder.pkl")
+    le_ind = load_model("industry_encoder.pkl")
+    print("[OK] All models loaded successfully")
+except Exception as e:
+    print(f"[ERROR] Failed to load models: {e}")
+    raise
 
 @app.route("/")
 def home():
