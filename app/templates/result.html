@@ -525,6 +525,9 @@ a:active {
         </div>
 
         <h3>Demand Level: <span style="color: #27ae60;">{{ demand }}</span></h3>
+        {% if confidence is not none %}
+        <p style="margin-top:6px; font-size:14px; color:#666">Confidence: <strong>{{ confidence }}%</strong></p>
+        {% endif %}
 
         <div class="result-stats">
             <div class="stat-box">
@@ -561,6 +564,7 @@ a:active {
 
         <div class="button-group">
             <a href="/dashboard">📊 View Dashboard</a>
+            <a href="/trade">💱 Market Trade</a>
             <a href="/">🔁 New Prediction</a>
         </div>
     </div>
