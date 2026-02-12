@@ -1,0 +1,1201 @@
+job_title,location,industry,skills,experience,salary_lpa,posted_date
+cloud engineer,Chennai,HealthTech,"aws, azure, linux",1,3,2023-12-26
+ml engineer,Bangalore,E-Commerce,"ml, python, tensorflow",4,14,2024-12-30
+ai engineer,Delhi,IT,"ml, ai, python",8,16,2023-01-31
+devops engineer,Delhi,E-Commerce,"kubernetes, linux, aws",1,19,2023-10-26
+devops engineer,Pune,E-Commerce,"linux, aws, kubernetes",1,19,2024-02-19
+cyber security analyst,Chennai,HealthTech,"networking, security, linux",4,7,2024-06-03
+cyber security analyst,Pune,HealthTech,"security, linux, networking",5,16,2024-11-28
+ai engineer,Chennai,EdTech,"ml, nlp, ai",3,6,2023-02-08
+web developer,Mumbai,IT,"javascript, html, css",5,12,2023-12-20
+business analyst,Chennai,IT,"communication, excel, sql",6,19,2023-07-03
+cyber security analyst,Chennai,EdTech,"linux, networking, security",6,5,2023-06-30
+business analyst,Hyderabad,FinTech,"excel, communication, sql",7,16,2024-06-23
+devops engineer,Pune,E-Commerce,"aws, kubernetes, linux",5,22,2023-06-14
+data scientist,Bangalore,IT,"python, ml, statistics",5,25,2023-06-13
+devops engineer,Delhi,E-Commerce,"aws, docker, linux",1,12,2024-05-18
+software engineer,Hyderabad,IT,"python, java, oops",2,14,2024-09-08
+ai engineer,Bangalore,FinTech,"nlp, python, ml",2,13,2023-11-18
+cloud engineer,Bangalore,IT,"linux, azure, docker",7,22,2024-05-30
+devops engineer,Chennai,E-Commerce,"docker, kubernetes, linux",4,19,2024-09-27
+web developer,Mumbai,FinTech,"css, react, javascript",0,4,2023-01-29
+cyber security analyst,Delhi,FinTech,"networking, linux, security",2,16,2024-09-06
+devops engineer,Pune,FinTech,"kubernetes, aws, docker",8,24,2024-05-27
+data scientist,Delhi,HealthTech,"python, statistics, ml",0,13,2024-09-25
+ai engineer,Hyderabad,HealthTech,"nlp, ai, ml",4,7,2023-11-22
+web developer,Bangalore,E-Commerce,"javascript, css, react",8,22,2024-09-11
+cyber security analyst,Hyderabad,EdTech,"linux, networking, security",4,12,2023-03-09
+data analyst,Chennai,FinTech,"power bi, python, excel",4,23,2023-11-11
+data analyst,Hyderabad,EdTech,"excel, sql, power bi",4,8,2023-03-12
+data analyst,Pune,FinTech,"power bi, sql, python",4,14,2024-06-12
+ml engineer,Hyderabad,EdTech,"ml, tensorflow, deep learning",1,6,2024-09-16
+data scientist,Delhi,EdTech,"python, statistics, sql",7,13,2024-02-12
+ml engineer,Mumbai,HealthTech,"deep learning, ml, python",7,10,2023-11-11
+devops engineer,Delhi,E-Commerce,"kubernetes, docker, aws",6,4,2023-05-04
+cyber security analyst,Pune,IT,"security, linux, networking",7,25,2024-07-14
+data analyst,Pune,FinTech,"excel, power bi, sql",2,16,2023-10-24
+business analyst,Bangalore,FinTech,"sql, excel, communication",8,9,2023-10-17
+data analyst,Delhi,HealthTech,"power bi, python, excel",2,17,2023-03-16
+data scientist,Pune,E-Commerce,"statistics, sql, python",7,18,2024-04-13
+ml engineer,Chennai,HealthTech,"deep learning, tensorflow, python",5,24,2023-08-14
+web developer,Hyderabad,IT,"react, html, css",3,14,2024-10-28
+ai engineer,Bangalore,EdTech,"python, ai, ml",4,6,2023-11-12
+ai engineer,Chennai,E-Commerce,"ai, python, nlp",0,23,2023-01-04
+ml engineer,Hyderabad,EdTech,"ml, python, deep learning",3,25,2023-05-03
+business analyst,Pune,IT,"communication, sql, excel",6,25,2023-12-02
+cyber security analyst,Chennai,EdTech,"security, linux, networking",6,11,2024-06-16
+cyber security analyst,Hyderabad,FinTech,"linux, networking, security",7,24,2023-02-12
+web developer,Delhi,FinTech,"css, javascript, react",0,23,2024-06-26
+business analyst,Delhi,FinTech,"sql, excel, communication",0,15,2023-10-12
+data analyst,Delhi,FinTech,"power bi, python, sql",1,14,2024-09-21
+ml engineer,Delhi,HealthTech,"python, tensorflow, ml",5,12,2023-01-06
+cloud engineer,Mumbai,FinTech,"azure, linux, docker",4,24,2023-10-21
+data scientist,Hyderabad,IT,"ml, statistics, python",2,20,2023-04-24
+data scientist,Mumbai,EdTech,"sql, python, statistics",6,13,2024-05-05
+data scientist,Pune,FinTech,"ml, sql, python",6,21,2023-04-12
+ai engineer,Hyderabad,EdTech,"ai, nlp, python",0,18,2024-12-28
+cyber security analyst,Hyderabad,HealthTech,"security, linux, networking",8,6,2023-10-21
+cyber security analyst,Delhi,HealthTech,"security, linux, networking",7,5,2024-07-17
+data analyst,Mumbai,FinTech,"sql, python, excel",2,19,2023-09-19
+devops engineer,Hyderabad,HealthTech,"kubernetes, aws, docker",6,15,2024-07-14
+ai engineer,Hyderabad,HealthTech,"python, nlp, ai",2,24,2024-12-16
+data scientist,Pune,EdTech,"python, sql, statistics",2,19,2023-12-30
+business analyst,Bangalore,FinTech,"excel, sql, communication",8,17,2023-08-13
+business analyst,Chennai,E-Commerce,"sql, communication, excel",1,19,2024-08-18
+cloud engineer,Hyderabad,E-Commerce,"linux, docker, aws",0,13,2023-09-10
+software engineer,Hyderabad,E-Commerce,"oops, sql, python",0,9,2023-09-28
+business analyst,Pune,IT,"excel, communication, sql",8,4,2023-01-26
+data analyst,Chennai,EdTech,"excel, python, power bi",1,22,2023-05-14
+business analyst,Delhi,HealthTech,"communication, excel, sql",6,16,2023-10-09
+software engineer,Delhi,E-Commerce,"oops, python, java",8,8,2023-03-21
+cyber security analyst,Bangalore,EdTech,"networking, security, linux",5,5,2024-03-04
+business analyst,Mumbai,EdTech,"excel, sql, communication",1,17,2024-12-06
+data scientist,Delhi,E-Commerce,"sql, python, statistics",3,21,2023-09-27
+devops engineer,Mumbai,FinTech,"docker, linux, kubernetes",7,12,2023-08-25
+data scientist,Bangalore,FinTech,"ml, statistics, sql",1,23,2023-10-29
+data analyst,Hyderabad,FinTech,"excel, python, power bi",3,10,2023-11-08
+ai engineer,Bangalore,HealthTech,"python, ml, ai",1,8,2024-08-27
+data scientist,Chennai,EdTech,"ml, python, statistics",5,14,2023-11-30
+software engineer,Pune,E-Commerce,"oops, sql, python",7,19,2023-10-17
+software engineer,Pune,E-Commerce,"java, python, sql",8,3,2023-11-11
+data analyst,Mumbai,HealthTech,"power bi, excel, sql",4,12,2023-10-25
+ai engineer,Bangalore,EdTech,"ml, python, nlp",2,7,2024-01-29
+cloud engineer,Mumbai,HealthTech,"azure, aws, docker",1,23,2023-01-26
+ai engineer,Delhi,E-Commerce,"ml, python, ai",0,17,2023-07-01
+data scientist,Hyderabad,EdTech,"python, sql, statistics",4,23,2024-04-19
+ai engineer,Mumbai,EdTech,"python, ai, ml",8,4,2023-12-10
+web developer,Bangalore,HealthTech,"html, react, css",0,20,2023-04-01
+ml engineer,Chennai,FinTech,"deep learning, ml, python",1,12,2024-06-15
+data analyst,Hyderabad,E-Commerce,"sql, power bi, excel",7,7,2023-10-02
+ml engineer,Delhi,IT,"ml, tensorflow, python",1,24,2024-06-29
+cloud engineer,Pune,EdTech,"linux, azure, aws",5,3,2024-01-26
+web developer,Hyderabad,FinTech,"html, react, javascript",3,15,2023-11-19
+devops engineer,Mumbai,HealthTech,"docker, linux, kubernetes",3,8,2023-09-01
+devops engineer,Mumbai,E-Commerce,"linux, kubernetes, aws",0,4,2024-06-14
+ai engineer,Chennai,E-Commerce,"ml, python, ai",3,14,2024-06-30
+web developer,Mumbai,EdTech,"html, react, css",0,11,2024-09-15
+cyber security analyst,Chennai,IT,"networking, linux, security",2,18,2023-01-08
+ai engineer,Pune,EdTech,"ai, python, ml",7,11,2023-06-16
+ml engineer,Delhi,HealthTech,"tensorflow, deep learning, ml",1,3,2023-12-21
+software engineer,Chennai,FinTech,"python, java, oops",4,8,2024-02-11
+data scientist,Pune,IT,"sql, ml, python",7,19,2023-03-25
+cyber security analyst,Bangalore,EdTech,"networking, linux, security",3,17,2024-07-16
+ml engineer,Delhi,IT,"ml, tensorflow, deep learning",2,15,2024-08-07
+business analyst,Chennai,FinTech,"excel, sql, communication",1,17,2023-01-23
+ml engineer,Hyderabad,HealthTech,"tensorflow, deep learning, ml",1,14,2023-01-31
+devops engineer,Bangalore,FinTech,"linux, aws, kubernetes",5,23,2024-05-18
+data analyst,Mumbai,EdTech,"excel, sql, python",5,21,2024-11-26
+data analyst,Bangalore,IT,"python, power bi, sql",3,17,2024-01-30
+web developer,Bangalore,EdTech,"react, html, javascript",5,16,2023-12-08
+cloud engineer,Hyderabad,E-Commerce,"azure, linux, docker",6,23,2024-02-14
+data analyst,Chennai,EdTech,"python, power bi, excel",0,18,2024-12-03
+software engineer,Delhi,FinTech,"java, oops, sql",8,16,2023-02-23
+devops engineer,Pune,FinTech,"aws, kubernetes, linux",7,20,2024-07-08
+ml engineer,Chennai,E-Commerce,"deep learning, python, ml",2,5,2024-10-03
+cloud engineer,Bangalore,E-Commerce,"linux, aws, docker",3,23,2024-05-28
+business analyst,Hyderabad,EdTech,"excel, communication, sql",1,7,2024-07-17
+ml engineer,Delhi,E-Commerce,"deep learning, tensorflow, python",8,7,2024-05-22
+data scientist,Delhi,EdTech,"statistics, sql, ml",5,13,2023-02-23
+ml engineer,Hyderabad,HealthTech,"ml, deep learning, python",1,7,2023-05-08
+ml engineer,Delhi,FinTech,"deep learning, python, tensorflow",4,18,2023-03-07
+cyber security analyst,Mumbai,EdTech,"linux, security, networking",7,18,2023-12-28
+ml engineer,Bangalore,HealthTech,"tensorflow, ml, deep learning",8,5,2023-01-28
+devops engineer,Pune,HealthTech,"docker, aws, linux",5,5,2024-07-22
+devops engineer,Chennai,FinTech,"aws, linux, docker",5,8,2023-02-07
+data scientist,Pune,IT,"sql, python, statistics",0,9,2023-12-09
+software engineer,Delhi,E-Commerce,"java, python, sql",5,7,2024-05-29
+software engineer,Delhi,IT,"java, oops, sql",8,20,2023-07-21
+devops engineer,Hyderabad,FinTech,"linux, aws, docker",4,14,2024-08-23
+cloud engineer,Hyderabad,E-Commerce,"docker, aws, linux",2,14,2024-05-27
+ai engineer,Mumbai,EdTech,"ai, python, nlp",5,23,2023-01-29
+data scientist,Delhi,IT,"ml, sql, python",6,8,2023-06-07
+devops engineer,Mumbai,IT,"kubernetes, aws, docker",2,6,2023-04-01
+data analyst,Chennai,EdTech,"excel, sql, power bi",5,17,2023-02-13
+data analyst,Delhi,HealthTech,"excel, sql, python",4,22,2023-06-26
+cyber security analyst,Mumbai,E-Commerce,"security, networking, linux",6,19,2024-01-12
+ml engineer,Bangalore,FinTech,"deep learning, ml, python",0,19,2023-11-23
+software engineer,Pune,HealthTech,"java, oops, python",2,19,2024-04-09
+devops engineer,Pune,E-Commerce,"docker, kubernetes, aws",6,4,2023-06-03
+devops engineer,Chennai,EdTech,"aws, linux, kubernetes",4,25,2023-07-12
+cyber security analyst,Mumbai,EdTech,"linux, networking, security",8,4,2023-08-08
+data analyst,Chennai,IT,"excel, power bi, python",0,8,2023-08-20
+data analyst,Pune,HealthTech,"sql, excel, power bi",5,4,2024-08-31
+ai engineer,Bangalore,HealthTech,"nlp, ml, ai",5,24,2024-04-08
+data analyst,Delhi,EdTech,"excel, sql, power bi",7,13,2023-02-27
+devops engineer,Delhi,E-Commerce,"linux, docker, aws",7,15,2023-04-10
+ml engineer,Bangalore,E-Commerce,"ml, python, deep learning",3,9,2024-07-21
+data analyst,Bangalore,HealthTech,"sql, python, excel",8,18,2023-06-28
+data analyst,Pune,EdTech,"power bi, python, sql",1,7,2024-08-12
+cyber security analyst,Bangalore,FinTech,"security, linux, networking",1,9,2024-10-06
+software engineer,Delhi,HealthTech,"sql, oops, python",4,25,2023-09-29
+cyber security analyst,Pune,HealthTech,"networking, security, linux",8,24,2023-06-08
+cloud engineer,Hyderabad,E-Commerce,"azure, linux, aws",0,4,2024-01-03
+software engineer,Hyderabad,HealthTech,"python, oops, java",5,19,2024-02-13
+data scientist,Bangalore,EdTech,"python, sql, ml",6,13,2023-10-03
+data analyst,Chennai,IT,"sql, python, power bi",8,5,2023-06-03
+software engineer,Hyderabad,HealthTech,"oops, java, sql",7,10,2024-07-04
+ml engineer,Delhi,IT,"ml, tensorflow, python",1,17,2023-07-03
+cloud engineer,Pune,HealthTech,"docker, linux, aws",3,7,2023-02-12
+ai engineer,Hyderabad,EdTech,"ai, nlp, ml",0,21,2023-09-01
+cloud engineer,Pune,HealthTech,"aws, azure, linux",3,5,2023-06-22
+cyber security analyst,Delhi,IT,"security, networking, linux",5,17,2023-07-17
+data scientist,Chennai,IT,"python, sql, statistics",0,11,2024-10-03
+cloud engineer,Delhi,FinTech,"linux, docker, azure",8,21,2023-08-14
+software engineer,Bangalore,IT,"java, sql, oops",4,16,2024-09-01
+business analyst,Delhi,EdTech,"excel, communication, sql",5,24,2024-04-16
+ml engineer,Chennai,IT,"tensorflow, deep learning, ml",0,4,2023-03-24
+web developer,Chennai,E-Commerce,"css, javascript, react",0,17,2024-10-25
+ml engineer,Chennai,HealthTech,"deep learning, tensorflow, python",8,25,2023-07-25
+software engineer,Chennai,HealthTech,"python, oops, java",3,13,2023-09-12
+devops engineer,Pune,IT,"docker, kubernetes, aws",5,19,2024-01-01
+data analyst,Hyderabad,E-Commerce,"excel, power bi, sql",4,24,2023-11-24
+cyber security analyst,Delhi,IT,"linux, networking, security",2,16,2024-04-06
+data scientist,Delhi,EdTech,"statistics, ml, python",2,5,2023-03-18
+cloud engineer,Chennai,E-Commerce,"docker, linux, aws",8,8,2024-05-18
+ml engineer,Hyderabad,HealthTech,"tensorflow, python, ml",1,23,2023-03-26
+data analyst,Chennai,FinTech,"sql, python, excel",4,16,2023-07-16
+web developer,Bangalore,HealthTech,"javascript, css, react",5,10,2023-02-12
+data scientist,Pune,HealthTech,"statistics, sql, python",2,11,2023-12-18
+cloud engineer,Delhi,E-Commerce,"linux, docker, aws",2,18,2024-07-08
+devops engineer,Pune,EdTech,"kubernetes, docker, aws",0,13,2024-10-20
+web developer,Hyderabad,FinTech,"react, css, html",0,21,2023-03-05
+cloud engineer,Hyderabad,EdTech,"docker, azure, linux",6,6,2023-11-26
+web developer,Hyderabad,FinTech,"react, javascript, html",2,21,2023-10-10
+devops engineer,Delhi,FinTech,"linux, aws, kubernetes",4,22,2023-10-23
+ml engineer,Bangalore,HealthTech,"deep learning, tensorflow, ml",0,23,2024-10-27
+devops engineer,Bangalore,EdTech,"kubernetes, docker, linux",8,6,2023-12-06
+data analyst,Pune,HealthTech,"excel, sql, power bi",0,12,2023-11-22
+business analyst,Hyderabad,HealthTech,"excel, sql, communication",0,13,2024-12-01
+software engineer,Chennai,E-Commerce,"java, sql, python",6,10,2023-12-08
+ai engineer,Mumbai,E-Commerce,"ai, python, ml",6,14,2023-06-27
+devops engineer,Mumbai,HealthTech,"aws, docker, linux",2,25,2023-04-11
+devops engineer,Hyderabad,HealthTech,"docker, linux, aws",6,13,2023-07-09
+cloud engineer,Chennai,FinTech,"docker, aws, linux",3,8,2023-02-28
+devops engineer,Chennai,HealthTech,"kubernetes, aws, docker",8,3,2024-09-07
+business analyst,Chennai,E-Commerce,"communication, sql, excel",5,11,2023-04-28
+web developer,Mumbai,IT,"javascript, html, react",2,11,2023-07-03
+web developer,Pune,E-Commerce,"react, html, css",4,8,2024-09-21
+ai engineer,Bangalore,FinTech,"ai, nlp, python",0,18,2023-04-21
+ai engineer,Bangalore,IT,"ai, ml, python",3,19,2024-08-16
+business analyst,Chennai,IT,"excel, communication, sql",4,9,2024-07-27
+ai engineer,Mumbai,IT,"ml, nlp, python",0,9,2024-04-25
+data analyst,Mumbai,E-Commerce,"excel, sql, power bi",5,21,2024-05-29
+ai engineer,Chennai,HealthTech,"ai, ml, python",8,25,2023-11-14
+ml engineer,Chennai,FinTech,"deep learning, tensorflow, python",1,20,2024-02-12
+cyber security analyst,Pune,FinTech,"security, linux, networking",3,21,2023-06-16
+cloud engineer,Chennai,EdTech,"aws, linux, azure",1,21,2024-06-27
+data analyst,Chennai,E-Commerce,"excel, python, sql",6,15,2024-02-28
+data analyst,Bangalore,IT,"excel, python, power bi",8,8,2024-11-30
+data scientist,Chennai,FinTech,"sql, ml, statistics",0,17,2023-07-17
+data scientist,Pune,E-Commerce,"statistics, ml, python",4,21,2024-07-04
+devops engineer,Mumbai,E-Commerce,"docker, aws, kubernetes",8,19,2023-04-01
+ai engineer,Chennai,E-Commerce,"python, ml, ai",2,21,2023-07-10
+cloud engineer,Pune,EdTech,"azure, docker, aws",0,23,2023-05-29
+devops engineer,Pune,EdTech,"linux, aws, kubernetes",4,19,2024-05-22
+ai engineer,Delhi,HealthTech,"python, ml, nlp",1,9,2024-02-21
+cyber security analyst,Hyderabad,HealthTech,"networking, linux, security",8,20,2023-08-20
+data analyst,Bangalore,EdTech,"power bi, excel, sql",5,9,2023-03-16
+data analyst,Delhi,E-Commerce,"excel, power bi, python",3,9,2023-03-13
+ml engineer,Mumbai,E-Commerce,"ml, python, deep learning",8,17,2023-11-16
+data analyst,Pune,E-Commerce,"power bi, python, sql",8,11,2024-10-15
+ml engineer,Pune,EdTech,"ml, python, tensorflow",1,6,2023-08-07
+ai engineer,Bangalore,FinTech,"ai, python, nlp",7,7,2023-03-27
+data scientist,Bangalore,FinTech,"statistics, sql, ml",6,11,2024-12-25
+data scientist,Hyderabad,E-Commerce,"ml, statistics, python",3,21,2024-02-17
+devops engineer,Chennai,IT,"aws, kubernetes, linux",4,12,2024-12-04
+data scientist,Mumbai,IT,"statistics, python, ml",8,5,2024-12-03
+data scientist,Mumbai,FinTech,"statistics, sql, python",4,5,2023-03-26
+software engineer,Hyderabad,EdTech,"python, java, oops",8,8,2024-10-05
+web developer,Bangalore,EdTech,"react, css, html",0,9,2023-08-12
+web developer,Delhi,HealthTech,"javascript, html, react",6,3,2024-01-04
+web developer,Bangalore,FinTech,"css, react, javascript",2,25,2024-10-03
+data analyst,Mumbai,EdTech,"python, excel, sql",0,23,2024-07-30
+cyber security analyst,Pune,IT,"linux, security, networking",4,21,2023-03-11
+devops engineer,Pune,IT,"kubernetes, linux, aws",1,9,2024-11-29
+ml engineer,Bangalore,E-Commerce,"deep learning, tensorflow, ml",3,3,2024-12-02
+web developer,Pune,HealthTech,"css, react, html",8,13,2024-02-13
+cyber security analyst,Chennai,E-Commerce,"networking, linux, security",1,19,2024-07-30
+business analyst,Pune,IT,"communication, excel, sql",7,8,2024-06-15
+business analyst,Chennai,IT,"excel, sql, communication",4,15,2024-12-18
+data analyst,Chennai,E-Commerce,"sql, excel, power bi",2,7,2024-08-01
+cloud engineer,Bangalore,EdTech,"linux, azure, aws",3,21,2023-02-13
+cyber security analyst,Hyderabad,IT,"linux, networking, security",4,8,2023-11-16
+data analyst,Mumbai,E-Commerce,"python, excel, sql",2,12,2024-06-24
+devops engineer,Mumbai,EdTech,"aws, kubernetes, linux",0,12,2024-01-23
+devops engineer,Pune,FinTech,"aws, linux, kubernetes",4,7,2023-05-22
+cyber security analyst,Delhi,HealthTech,"security, linux, networking",8,12,2023-05-17
+ml engineer,Pune,IT,"ml, python, deep learning",8,12,2024-07-20
+business analyst,Bangalore,E-Commerce,"communication, sql, excel",0,21,2024-12-14
+web developer,Pune,HealthTech,"javascript, html, react",5,3,2024-07-27
+cloud engineer,Bangalore,HealthTech,"linux, aws, docker",0,19,2024-05-07
+cloud engineer,Hyderabad,IT,"azure, docker, linux",7,8,2023-08-04
+cyber security analyst,Chennai,EdTech,"security, networking, linux",6,6,2024-11-15
+ml engineer,Chennai,IT,"python, ml, deep learning",3,25,2023-11-02
+software engineer,Bangalore,IT,"sql, oops, java",0,15,2024-05-13
+data analyst,Mumbai,E-Commerce,"sql, excel, python",4,3,2024-11-12
+devops engineer,Bangalore,E-Commerce,"kubernetes, aws, docker",4,19,2023-04-28
+data scientist,Pune,IT,"statistics, sql, ml",0,5,2024-12-08
+ml engineer,Hyderabad,E-Commerce,"tensorflow, python, ml",6,25,2024-08-24
+data scientist,Bangalore,IT,"ml, statistics, sql",8,14,2024-05-03
+web developer,Pune,FinTech,"html, css, javascript",8,4,2023-11-11
+data analyst,Hyderabad,HealthTech,"python, sql, power bi",1,25,2024-08-28
+ml engineer,Hyderabad,HealthTech,"tensorflow, python, ml",4,4,2024-11-02
+software engineer,Delhi,EdTech,"python, sql, java",8,3,2024-11-18
+web developer,Hyderabad,IT,"react, javascript, css",6,3,2023-10-17
+ml engineer,Chennai,IT,"deep learning, python, tensorflow",1,24,2024-12-02
+cyber security analyst,Hyderabad,IT,"networking, linux, security",8,16,2023-05-04
+cyber security analyst,Hyderabad,FinTech,"linux, security, networking",5,18,2024-01-27
+business analyst,Pune,IT,"communication, sql, excel",5,13,2023-08-20
+cloud engineer,Bangalore,E-Commerce,"azure, linux, docker",8,12,2023-01-25
+cloud engineer,Delhi,EdTech,"aws, linux, docker",8,21,2024-05-02
+ml engineer,Delhi,FinTech,"ml, deep learning, tensorflow",8,17,2024-04-08
+ai engineer,Chennai,EdTech,"python, ai, nlp",0,18,2023-11-27
+business analyst,Bangalore,HealthTech,"excel, communication, sql",7,7,2023-02-02
+web developer,Mumbai,E-Commerce,"html, javascript, css",7,10,2024-06-06
+business analyst,Mumbai,EdTech,"communication, excel, sql",3,17,2023-04-16
+data analyst,Pune,HealthTech,"sql, power bi, excel",5,5,2023-03-25
+software engineer,Hyderabad,FinTech,"python, java, oops",8,22,2024-06-15
+ml engineer,Bangalore,HealthTech,"ml, tensorflow, deep learning",2,19,2023-06-10
+data scientist,Pune,EdTech,"ml, python, statistics",0,7,2024-03-04
+software engineer,Delhi,IT,"java, python, oops",2,12,2024-07-22
+data analyst,Bangalore,FinTech,"power bi, sql, python",7,13,2023-10-21
+ml engineer,Pune,HealthTech,"python, deep learning, tensorflow",1,13,2024-11-02
+data analyst,Hyderabad,IT,"excel, python, sql",4,15,2023-07-02
+devops engineer,Chennai,E-Commerce,"kubernetes, docker, aws",8,23,2024-07-07
+ml engineer,Bangalore,E-Commerce,"python, ml, deep learning",8,3,2023-01-11
+software engineer,Mumbai,EdTech,"python, oops, sql",2,11,2023-05-04
+ai engineer,Chennai,FinTech,"nlp, ai, python",7,7,2023-05-11
+devops engineer,Bangalore,HealthTech,"aws, docker, kubernetes",0,15,2023-05-28
+data scientist,Mumbai,HealthTech,"statistics, sql, ml",4,8,2023-11-17
+business analyst,Mumbai,EdTech,"communication, sql, excel",2,12,2024-08-29
+ai engineer,Mumbai,E-Commerce,"nlp, python, ml",7,18,2024-11-06
+cyber security analyst,Bangalore,E-Commerce,"linux, security, networking",0,18,2023-08-19
+ai engineer,Delhi,FinTech,"nlp, ai, python",2,24,2023-08-08
+software engineer,Hyderabad,E-Commerce,"oops, python, java",0,14,2024-11-07
+data analyst,Hyderabad,IT,"python, sql, power bi",8,8,2024-10-15
+cloud engineer,Pune,FinTech,"azure, docker, aws",1,4,2024-09-14
+cloud engineer,Chennai,EdTech,"linux, aws, docker",4,24,2024-01-10
+data scientist,Pune,EdTech,"statistics, sql, ml",1,4,2024-09-05
+cyber security analyst,Delhi,EdTech,"linux, networking, security",8,11,2023-08-08
+cloud engineer,Hyderabad,HealthTech,"azure, aws, docker",4,16,2023-09-13
+web developer,Pune,EdTech,"html, css, react",0,19,2024-03-09
+cyber security analyst,Pune,HealthTech,"networking, linux, security",5,4,2024-10-18
+business analyst,Chennai,IT,"sql, excel, communication",3,12,2023-08-18
+data analyst,Bangalore,E-Commerce,"sql, python, excel",6,10,2023-05-04
+data analyst,Bangalore,IT,"python, power bi, sql",5,11,2023-02-02
+web developer,Pune,FinTech,"javascript, react, css",7,10,2023-05-01
+data scientist,Hyderabad,EdTech,"ml, statistics, sql",7,10,2023-03-26
+ai engineer,Pune,HealthTech,"ai, nlp, ml",3,6,2023-09-16
+devops engineer,Chennai,FinTech,"kubernetes, aws, docker",2,22,2024-05-31
+cloud engineer,Hyderabad,FinTech,"azure, docker, linux",2,15,2023-07-14
+data analyst,Hyderabad,EdTech,"excel, python, sql",6,25,2024-05-12
+cyber security analyst,Mumbai,HealthTech,"networking, security, linux",5,13,2023-01-21
+web developer,Hyderabad,HealthTech,"react, css, javascript",3,19,2024-07-27
+cyber security analyst,Bangalore,EdTech,"networking, linux, security",4,4,2023-03-19
+business analyst,Hyderabad,IT,"excel, communication, sql",2,10,2024-11-08
+data analyst,Pune,HealthTech,"power bi, excel, sql",4,8,2023-04-25
+cloud engineer,Pune,E-Commerce,"aws, linux, azure",3,11,2023-08-27
+web developer,Delhi,HealthTech,"react, css, html",0,7,2024-12-03
+ml engineer,Bangalore,IT,"tensorflow, ml, deep learning",6,7,2023-04-17
+ml engineer,Chennai,EdTech,"ml, python, tensorflow",1,14,2023-11-18
+software engineer,Chennai,IT,"python, java, oops",1,22,2023-11-17
+cyber security analyst,Hyderabad,E-Commerce,"linux, networking, security",8,11,2023-11-28
+ai engineer,Chennai,IT,"ai, ml, nlp",3,20,2024-04-23
+business analyst,Pune,HealthTech,"excel, sql, communication",3,13,2023-05-25
+data analyst,Pune,E-Commerce,"power bi, excel, python",1,5,2024-01-26
+data scientist,Bangalore,FinTech,"statistics, python, ml",0,8,2024-10-13
+business analyst,Hyderabad,IT,"sql, excel, communication",4,24,2024-05-11
+ml engineer,Bangalore,FinTech,"ml, deep learning, tensorflow",3,9,2024-04-16
+data scientist,Bangalore,E-Commerce,"python, sql, statistics",0,16,2023-05-09
+web developer,Hyderabad,HealthTech,"css, react, html",2,20,2023-08-25
+ml engineer,Bangalore,EdTech,"python, ml, tensorflow",6,19,2023-09-23
+cyber security analyst,Delhi,EdTech,"networking, linux, security",1,14,2024-08-08
+business analyst,Bangalore,E-Commerce,"communication, excel, sql",4,19,2023-03-11
+web developer,Bangalore,IT,"html, react, javascript",3,8,2024-12-10
+ai engineer,Hyderabad,E-Commerce,"python, nlp, ml",4,13,2024-07-07
+web developer,Chennai,HealthTech,"javascript, html, css",7,23,2024-10-10
+devops engineer,Mumbai,FinTech,"docker, kubernetes, aws",0,6,2023-08-14
+web developer,Mumbai,E-Commerce,"javascript, html, react",0,16,2023-09-24
+data scientist,Delhi,EdTech,"python, sql, ml",6,8,2023-06-19
+ml engineer,Bangalore,FinTech,"python, tensorflow, deep learning",1,5,2024-07-04
+ai engineer,Chennai,HealthTech,"ml, nlp, ai",8,25,2024-04-03
+devops engineer,Hyderabad,EdTech,"aws, linux, kubernetes",6,18,2024-09-28
+ml engineer,Pune,EdTech,"ml, deep learning, tensorflow",3,22,2023-07-23
+web developer,Bangalore,IT,"html, css, react",0,3,2023-10-02
+data scientist,Pune,IT,"python, statistics, ml",3,19,2024-05-22
+software engineer,Bangalore,EdTech,"sql, oops, java",0,18,2024-07-22
+ml engineer,Chennai,E-Commerce,"deep learning, ml, tensorflow",6,11,2024-05-14
+data scientist,Bangalore,IT,"python, sql, ml",6,16,2024-04-19
+ai engineer,Pune,E-Commerce,"ml, python, nlp",5,19,2024-02-12
+devops engineer,Bangalore,IT,"docker, aws, linux",3,23,2023-03-03
+ml engineer,Chennai,HealthTech,"ml, tensorflow, python",1,13,2023-08-17
+business analyst,Mumbai,IT,"communication, excel, sql",1,8,2023-08-24
+business analyst,Mumbai,HealthTech,"communication, sql, excel",4,6,2023-12-20
+ai engineer,Hyderabad,FinTech,"ml, ai, nlp",4,6,2024-08-29
+web developer,Pune,FinTech,"javascript, html, react",4,15,2024-12-10
+web developer,Pune,HealthTech,"react, javascript, css",3,4,2023-09-21
+cloud engineer,Pune,HealthTech,"linux, docker, azure",5,14,2023-03-12
+cyber security analyst,Pune,EdTech,"security, linux, networking",5,7,2024-09-25
+cyber security analyst,Mumbai,FinTech,"security, linux, networking",2,19,2023-08-14
+data analyst,Mumbai,EdTech,"power bi, sql, python",1,21,2023-03-28
+cloud engineer,Hyderabad,E-Commerce,"linux, aws, azure",8,4,2023-09-12
+devops engineer,Mumbai,IT,"aws, linux, kubernetes",3,23,2023-01-23
+devops engineer,Bangalore,IT,"aws, linux, kubernetes",6,13,2024-07-25
+ai engineer,Pune,HealthTech,"nlp, ai, ml",7,6,2024-08-20
+ai engineer,Bangalore,EdTech,"nlp, ml, ai",2,15,2024-12-27
+web developer,Chennai,E-Commerce,"react, html, css",3,23,2024-11-24
+ml engineer,Pune,E-Commerce,"python, ml, deep learning",3,24,2023-10-01
+cloud engineer,Chennai,FinTech,"aws, docker, azure",2,23,2023-03-21
+web developer,Chennai,IT,"html, css, react",2,8,2023-06-15
+ml engineer,Hyderabad,HealthTech,"tensorflow, python, deep learning",3,17,2023-11-18
+cloud engineer,Chennai,IT,"aws, linux, azure",3,10,2023-07-17
+data analyst,Bangalore,HealthTech,"excel, power bi, sql",5,14,2024-01-18
+data scientist,Mumbai,FinTech,"statistics, ml, python",8,15,2023-10-12
+data scientist,Hyderabad,EdTech,"ml, python, statistics",5,20,2024-05-08
+data scientist,Delhi,E-Commerce,"statistics, sql, python",2,6,2024-06-06
+devops engineer,Delhi,EdTech,"linux, aws, kubernetes",3,13,2023-05-19
+cyber security analyst,Hyderabad,HealthTech,"networking, linux, security",1,18,2023-12-23
+software engineer,Delhi,IT,"python, java, oops",6,15,2023-12-05
+devops engineer,Chennai,IT,"kubernetes, docker, aws",6,14,2023-08-18
+software engineer,Hyderabad,E-Commerce,"sql, oops, java",5,15,2023-02-11
+software engineer,Pune,FinTech,"oops, java, python",6,6,2024-11-16
+data scientist,Chennai,HealthTech,"ml, python, sql",6,12,2023-11-20
+ml engineer,Hyderabad,IT,"tensorflow, ml, python",4,22,2023-01-04
+cyber security analyst,Chennai,HealthTech,"networking, security, linux",7,14,2024-05-19
+business analyst,Hyderabad,FinTech,"excel, sql, communication",4,14,2024-06-23
+devops engineer,Pune,HealthTech,"kubernetes, docker, linux",8,9,2023-10-14
+data scientist,Hyderabad,HealthTech,"python, sql, statistics",4,10,2024-12-17
+business analyst,Delhi,EdTech,"excel, sql, communication",0,21,2024-04-09
+data scientist,Hyderabad,IT,"ml, statistics, sql",2,9,2023-11-13
+ml engineer,Delhi,HealthTech,"deep learning, python, tensorflow",6,4,2024-03-07
+devops engineer,Pune,FinTech,"aws, linux, docker",8,10,2023-02-22
+cyber security analyst,Mumbai,E-Commerce,"security, linux, networking",4,25,2024-06-02
+devops engineer,Pune,EdTech,"aws, docker, kubernetes",0,9,2024-11-13
+devops engineer,Bangalore,HealthTech,"docker, linux, kubernetes",6,16,2024-09-12
+ml engineer,Pune,FinTech,"tensorflow, python, ml",2,16,2023-09-30
+ml engineer,Delhi,E-Commerce,"deep learning, python, ml",8,8,2024-02-16
+cyber security analyst,Pune,HealthTech,"security, networking, linux",0,15,2024-01-29
+ml engineer,Delhi,EdTech,"python, deep learning, tensorflow",0,9,2023-05-16
+business analyst,Delhi,E-Commerce,"sql, communication, excel",1,23,2024-06-14
+software engineer,Hyderabad,HealthTech,"python, java, oops",8,19,2023-11-18
+ml engineer,Pune,HealthTech,"tensorflow, ml, deep learning",5,18,2024-06-13
+cloud engineer,Mumbai,E-Commerce,"linux, azure, docker",6,25,2024-09-06
+cloud engineer,Hyderabad,E-Commerce,"aws, azure, linux",5,13,2023-07-20
+ml engineer,Hyderabad,EdTech,"deep learning, ml, python",7,20,2023-01-27
+devops engineer,Delhi,HealthTech,"linux, aws, kubernetes",8,19,2023-01-01
+software engineer,Pune,E-Commerce,"java, oops, python",1,12,2024-07-07
+data analyst,Delhi,IT,"power bi, sql, excel",4,24,2023-11-14
+data scientist,Hyderabad,HealthTech,"python, sql, ml",3,22,2023-02-12
+cyber security analyst,Delhi,EdTech,"security, networking, linux",0,8,2023-01-18
+devops engineer,Pune,HealthTech,"kubernetes, linux, docker",3,9,2023-02-08
+software engineer,Bangalore,EdTech,"oops, python, java",2,15,2023-02-25
+cyber security analyst,Pune,FinTech,"networking, linux, security",7,13,2024-02-04
+cyber security analyst,Mumbai,IT,"linux, networking, security",3,7,2024-04-06
+ai engineer,Mumbai,FinTech,"nlp, ml, ai",5,7,2024-11-27
+cyber security analyst,Mumbai,FinTech,"networking, linux, security",4,12,2023-11-24
+data analyst,Delhi,E-Commerce,"excel, power bi, sql",3,11,2023-12-15
+business analyst,Delhi,HealthTech,"sql, communication, excel",0,12,2024-01-01
+ml engineer,Chennai,HealthTech,"tensorflow, deep learning, ml",2,17,2023-12-30
+devops engineer,Hyderabad,FinTech,"docker, linux, aws",5,22,2023-07-21
+data analyst,Chennai,HealthTech,"python, excel, power bi",0,18,2024-01-19
+cyber security analyst,Delhi,EdTech,"linux, networking, security",7,10,2024-01-15
+cloud engineer,Bangalore,IT,"docker, azure, linux",0,4,2023-10-31
+data scientist,Mumbai,E-Commerce,"sql, python, statistics",4,25,2023-09-02
+devops engineer,Bangalore,HealthTech,"docker, kubernetes, aws",7,25,2023-04-11
+ml engineer,Delhi,HealthTech,"ml, tensorflow, python",6,21,2024-03-12
+data analyst,Mumbai,FinTech,"power bi, excel, python",3,19,2023-07-16
+devops engineer,Hyderabad,FinTech,"kubernetes, docker, aws",2,11,2024-03-17
+cloud engineer,Hyderabad,FinTech,"azure, aws, docker",1,18,2023-09-08
+data analyst,Delhi,E-Commerce,"python, excel, sql",4,18,2024-09-17
+cloud engineer,Chennai,FinTech,"aws, docker, azure",8,3,2024-06-22
+data analyst,Bangalore,E-Commerce,"python, excel, sql",5,5,2023-10-30
+cloud engineer,Pune,IT,"aws, azure, linux",2,20,2024-03-21
+ml engineer,Pune,E-Commerce,"deep learning, python, ml",6,13,2024-11-15
+ml engineer,Bangalore,EdTech,"tensorflow, python, deep learning",0,3,2023-02-04
+devops engineer,Pune,E-Commerce,"docker, aws, kubernetes",4,8,2024-05-03
+ml engineer,Delhi,FinTech,"python, deep learning, ml",1,24,2024-02-14
+devops engineer,Hyderabad,FinTech,"docker, linux, aws",0,15,2024-04-04
+business analyst,Hyderabad,EdTech,"sql, excel, communication",3,24,2023-10-18
+business analyst,Delhi,HealthTech,"sql, excel, communication",1,21,2023-01-10
+data scientist,Mumbai,E-Commerce,"ml, sql, python",0,7,2023-07-22
+business analyst,Bangalore,HealthTech,"sql, communication, excel",5,23,2023-04-30
+ml engineer,Bangalore,HealthTech,"tensorflow, ml, python",4,8,2023-04-24
+ai engineer,Chennai,EdTech,"python, ai, ml",8,20,2023-03-31
+cyber security analyst,Delhi,E-Commerce,"security, linux, networking",0,25,2024-02-05
+cloud engineer,Mumbai,EdTech,"aws, docker, azure",4,4,2024-03-13
+cyber security analyst,Delhi,E-Commerce,"linux, networking, security",3,17,2023-04-30
+ai engineer,Mumbai,FinTech,"ai, nlp, python",6,19,2024-03-24
+business analyst,Hyderabad,FinTech,"communication, excel, sql",2,7,2023-07-29
+cloud engineer,Chennai,HealthTech,"docker, aws, azure",2,13,2023-11-06
+ai engineer,Bangalore,E-Commerce,"ai, ml, python",6,22,2023-03-09
+cloud engineer,Delhi,FinTech,"linux, azure, docker",3,22,2024-12-20
+software engineer,Pune,E-Commerce,"sql, oops, python",8,11,2024-06-23
+cloud engineer,Pune,HealthTech,"docker, azure, aws",1,5,2023-08-16
+devops engineer,Mumbai,E-Commerce,"kubernetes, linux, aws",2,12,2024-11-19
+devops engineer,Delhi,FinTech,"docker, linux, aws",1,14,2023-05-05
+cloud engineer,Pune,E-Commerce,"azure, linux, docker",4,3,2023-11-04
+ml engineer,Delhi,EdTech,"ml, python, deep learning",4,12,2024-07-24
+ml engineer,Bangalore,EdTech,"tensorflow, ml, python",0,3,2023-04-24
+web developer,Chennai,HealthTech,"react, html, css",3,24,2024-05-30
+cyber security analyst,Hyderabad,E-Commerce,"networking, security, linux",5,9,2024-02-19
+web developer,Delhi,IT,"javascript, html, css",2,22,2024-06-16
+cyber security analyst,Mumbai,IT,"networking, linux, security",7,10,2024-05-09
+ai engineer,Delhi,IT,"ml, ai, nlp",3,10,2023-05-21
+software engineer,Chennai,E-Commerce,"oops, sql, java",1,15,2023-06-30
+data analyst,Mumbai,FinTech,"sql, python, excel",2,8,2024-11-08
+software engineer,Hyderabad,EdTech,"java, sql, oops",8,25,2023-11-09
+software engineer,Mumbai,FinTech,"sql, python, java",6,14,2023-05-14
+data scientist,Delhi,HealthTech,"ml, sql, statistics",7,19,2024-07-10
+web developer,Mumbai,HealthTech,"react, css, html",3,9,2023-07-28
+business analyst,Chennai,E-Commerce,"sql, communication, excel",3,21,2023-02-23
+business analyst,Hyderabad,IT,"communication, excel, sql",7,8,2024-06-07
+devops engineer,Chennai,FinTech,"kubernetes, aws, docker",2,3,2024-11-12
+business analyst,Hyderabad,E-Commerce,"sql, excel, communication",5,16,2024-03-21
+ai engineer,Bangalore,FinTech,"ml, ai, python",6,10,2024-08-28
+web developer,Hyderabad,IT,"css, react, javascript",2,22,2024-07-30
+web developer,Mumbai,IT,"react, html, css",6,20,2023-04-25
+ml engineer,Bangalore,IT,"deep learning, ml, tensorflow",2,10,2024-04-03
+software engineer,Delhi,FinTech,"sql, python, oops",7,15,2023-05-16
+data analyst,Mumbai,EdTech,"python, power bi, sql",8,15,2023-04-06
+ai engineer,Chennai,E-Commerce,"ai, nlp, ml",5,24,2024-02-26
+data analyst,Bangalore,EdTech,"python, power bi, excel",8,21,2023-03-08
+data analyst,Mumbai,E-Commerce,"excel, python, power bi",6,24,2024-08-14
+cloud engineer,Chennai,FinTech,"azure, docker, aws",8,5,2024-12-04
+cloud engineer,Pune,HealthTech,"azure, aws, linux",0,7,2024-12-25
+software engineer,Hyderabad,IT,"oops, sql, python",7,5,2023-01-17
+ai engineer,Chennai,EdTech,"python, ml, ai",1,14,2023-11-05
+devops engineer,Chennai,FinTech,"kubernetes, linux, docker",8,10,2024-01-14
+cloud engineer,Hyderabad,EdTech,"linux, docker, azure",3,25,2023-10-04
+cloud engineer,Delhi,FinTech,"docker, aws, azure",0,22,2024-08-27
+data scientist,Chennai,HealthTech,"ml, sql, statistics",0,12,2024-01-30
+data analyst,Hyderabad,IT,"sql, power bi, excel",6,20,2023-10-26
+software engineer,Bangalore,E-Commerce,"sql, java, oops",5,17,2023-05-21
+software engineer,Pune,HealthTech,"java, oops, python",7,12,2023-03-04
+data analyst,Pune,E-Commerce,"excel, python, sql",7,10,2024-07-09
+cloud engineer,Pune,EdTech,"linux, docker, azure",6,11,2023-01-07
+ml engineer,Mumbai,EdTech,"ml, deep learning, tensorflow",4,24,2023-10-25
+data scientist,Pune,HealthTech,"statistics, sql, python",3,24,2024-11-23
+data scientist,Bangalore,EdTech,"sql, ml, statistics",0,7,2023-01-29
+devops engineer,Mumbai,IT,"kubernetes, linux, docker",4,23,2024-11-08
+data analyst,Chennai,E-Commerce,"power bi, sql, python",7,18,2023-07-04
+business analyst,Chennai,EdTech,"excel, sql, communication",3,12,2023-12-10
+data analyst,Bangalore,IT,"excel, power bi, python",3,10,2023-07-14
+software engineer,Pune,IT,"sql, java, oops",6,16,2024-06-17
+business analyst,Chennai,HealthTech,"excel, sql, communication",8,6,2024-03-11
+software engineer,Mumbai,IT,"oops, java, sql",5,24,2024-10-23
+ai engineer,Mumbai,IT,"nlp, ml, ai",1,23,2024-04-28
+cyber security analyst,Delhi,FinTech,"linux, networking, security",0,23,2024-02-02
+cyber security analyst,Pune,EdTech,"networking, security, linux",6,16,2023-01-01
+ml engineer,Mumbai,FinTech,"python, ml, tensorflow",2,6,2023-08-29
+business analyst,Chennai,E-Commerce,"excel, communication, sql",4,13,2023-02-04
+cyber security analyst,Delhi,FinTech,"linux, security, networking",2,19,2023-04-11
+cloud engineer,Pune,IT,"azure, docker, linux",5,7,2023-06-03
+cyber security analyst,Mumbai,IT,"linux, networking, security",5,9,2024-11-27
+software engineer,Pune,IT,"oops, sql, python",6,8,2023-06-02
+web developer,Pune,E-Commerce,"css, html, javascript",0,19,2023-12-25
+devops engineer,Chennai,EdTech,"linux, kubernetes, aws",0,9,2024-02-17
+ai engineer,Mumbai,HealthTech,"python, ml, ai",2,22,2023-01-25
+software engineer,Delhi,FinTech,"oops, python, java",6,25,2024-11-11
+ai engineer,Chennai,E-Commerce,"python, ai, ml",4,16,2024-04-14
+cyber security analyst,Hyderabad,FinTech,"networking, security, linux",5,19,2024-10-16
+business analyst,Hyderabad,IT,"excel, communication, sql",2,14,2023-05-15
+software engineer,Chennai,EdTech,"oops, python, java",8,8,2024-08-23
+cyber security analyst,Chennai,HealthTech,"networking, linux, security",7,18,2024-08-07
+business analyst,Mumbai,EdTech,"sql, communication, excel",4,14,2024-05-07
+software engineer,Hyderabad,HealthTech,"oops, java, sql",2,16,2024-03-02
+ai engineer,Delhi,E-Commerce,"ml, ai, python",0,24,2023-03-08
+cyber security analyst,Delhi,E-Commerce,"networking, security, linux",0,22,2024-04-02
+cyber security analyst,Hyderabad,EdTech,"security, networking, linux",7,10,2024-07-01
+web developer,Hyderabad,E-Commerce,"html, javascript, react",3,7,2023-01-17
+business analyst,Hyderabad,FinTech,"excel, sql, communication",4,11,2023-02-13
+ml engineer,Pune,IT,"ml, python, tensorflow",2,17,2023-06-10
+cyber security analyst,Bangalore,E-Commerce,"networking, linux, security",0,3,2023-11-28
+devops engineer,Bangalore,IT,"linux, docker, kubernetes",2,6,2023-11-11
+business analyst,Chennai,EdTech,"communication, excel, sql",4,11,2024-05-12
+ai engineer,Bangalore,EdTech,"nlp, ml, python",7,24,2024-07-24
+ml engineer,Hyderabad,HealthTech,"ml, tensorflow, python",8,20,2023-02-18
+ml engineer,Pune,HealthTech,"tensorflow, ml, python",6,15,2023-01-06
+business analyst,Delhi,HealthTech,"communication, sql, excel",3,23,2023-12-31
+software engineer,Pune,FinTech,"java, python, sql",6,10,2024-12-30
+ml engineer,Bangalore,E-Commerce,"tensorflow, deep learning, python",7,13,2024-07-01
+data scientist,Chennai,FinTech,"python, statistics, ml",5,17,2024-02-08
+business analyst,Delhi,E-Commerce,"communication, excel, sql",7,3,2024-11-27
+business analyst,Bangalore,FinTech,"excel, communication, sql",3,17,2024-01-27
+ml engineer,Mumbai,EdTech,"deep learning, tensorflow, python",4,8,2024-01-10
+data analyst,Hyderabad,E-Commerce,"sql, python, excel",1,9,2024-10-24
+cyber security analyst,Pune,HealthTech,"networking, security, linux",8,24,2023-06-16
+cyber security analyst,Delhi,FinTech,"security, linux, networking",4,17,2024-04-22
+cloud engineer,Chennai,FinTech,"docker, linux, azure",3,10,2023-07-03
+ai engineer,Chennai,FinTech,"ml, nlp, python",2,20,2025-01-01
+web developer,Chennai,HealthTech,"css, html, javascript",4,13,2024-11-15
+cyber security analyst,Mumbai,EdTech,"security, linux, networking",7,8,2023-12-26
+ai engineer,Hyderabad,IT,"ai, ml, python",6,16,2023-12-06
+data scientist,Chennai,E-Commerce,"statistics, ml, python",0,15,2024-07-16
+ml engineer,Bangalore,FinTech,"ml, tensorflow, deep learning",8,14,2023-09-26
+data analyst,Chennai,FinTech,"sql, python, excel",1,7,2024-04-17
+web developer,Hyderabad,FinTech,"javascript, css, html",5,18,2023-07-01
+data analyst,Pune,HealthTech,"power bi, excel, sql",5,23,2023-12-20
+business analyst,Chennai,EdTech,"communication, excel, sql",6,23,2024-06-25
+devops engineer,Chennai,EdTech,"kubernetes, linux, aws",5,7,2024-10-22
+business analyst,Hyderabad,HealthTech,"sql, communication, excel",6,12,2023-06-18
+software engineer,Delhi,EdTech,"oops, java, sql",5,15,2024-02-13
+web developer,Chennai,IT,"css, react, javascript",3,20,2023-05-15
+software engineer,Hyderabad,FinTech,"java, sql, oops",7,17,2023-09-20
+cyber security analyst,Bangalore,E-Commerce,"linux, networking, security",4,17,2023-01-16
+data scientist,Bangalore,IT,"ml, python, statistics",1,14,2023-02-02
+software engineer,Pune,HealthTech,"oops, sql, python",1,20,2023-11-19
+ai engineer,Bangalore,HealthTech,"ai, nlp, ml",4,21,2024-03-20
+data analyst,Chennai,EdTech,"sql, power bi, python",6,3,2023-08-04
+web developer,Hyderabad,HealthTech,"css, javascript, react",0,24,2024-10-15
+ai engineer,Bangalore,EdTech,"ml, ai, nlp",2,13,2023-04-23
+ai engineer,Mumbai,HealthTech,"python, nlp, ml",7,9,2024-10-30
+devops engineer,Pune,EdTech,"docker, linux, aws",2,9,2023-11-04
+software engineer,Delhi,FinTech,"sql, java, python",1,25,2024-09-07
+software engineer,Bangalore,HealthTech,"python, oops, java",6,23,2024-03-05
+cloud engineer,Chennai,HealthTech,"linux, aws, azure",5,20,2023-09-01
+web developer,Chennai,FinTech,"react, javascript, css",4,4,2024-04-29
+devops engineer,Chennai,FinTech,"aws, docker, kubernetes",8,5,2024-12-07
+cyber security analyst,Pune,E-Commerce,"networking, linux, security",5,6,2023-06-23
+data scientist,Bangalore,FinTech,"ml, python, statistics",6,7,2023-05-04
+ai engineer,Pune,E-Commerce,"ai, python, nlp",0,21,2023-04-01
+data analyst,Bangalore,E-Commerce,"power bi, sql, python",1,24,2024-02-20
+ai engineer,Delhi,FinTech,"nlp, python, ai",2,11,2023-07-03
+cyber security analyst,Delhi,IT,"security, linux, networking",1,4,2023-04-16
+ml engineer,Pune,HealthTech,"python, deep learning, tensorflow",3,22,2023-07-01
+data analyst,Bangalore,EdTech,"excel, sql, power bi",1,16,2024-09-29
+ml engineer,Pune,IT,"python, tensorflow, deep learning",2,3,2024-02-16
+cyber security analyst,Hyderabad,EdTech,"networking, security, linux",7,16,2024-07-25
+devops engineer,Hyderabad,E-Commerce,"linux, kubernetes, aws",2,16,2023-01-11
+software engineer,Mumbai,HealthTech,"sql, python, oops",6,10,2024-04-28
+software engineer,Bangalore,EdTech,"sql, python, oops",7,10,2023-01-29
+data scientist,Hyderabad,HealthTech,"python, sql, statistics",7,23,2024-02-14
+cyber security analyst,Delhi,IT,"linux, networking, security",6,8,2023-07-26
+cloud engineer,Pune,FinTech,"linux, azure, docker",7,19,2023-07-19
+cyber security analyst,Delhi,FinTech,"linux, networking, security",6,18,2023-06-02
+cyber security analyst,Delhi,IT,"linux, security, networking",2,6,2023-10-28
+software engineer,Mumbai,E-Commerce,"java, python, sql",0,18,2023-04-18
+cloud engineer,Mumbai,EdTech,"docker, linux, aws",8,16,2023-02-01
+devops engineer,Delhi,E-Commerce,"docker, aws, kubernetes",6,24,2024-07-09
+web developer,Delhi,IT,"react, css, javascript",5,14,2023-04-07
+devops engineer,Bangalore,FinTech,"aws, docker, kubernetes",2,6,2023-12-05
+cyber security analyst,Chennai,E-Commerce,"linux, networking, security",6,15,2023-07-06
+devops engineer,Hyderabad,FinTech,"docker, kubernetes, linux",2,5,2023-08-19
+software engineer,Delhi,FinTech,"java, sql, oops",8,25,2024-06-04
+devops engineer,Delhi,EdTech,"docker, aws, linux",3,24,2023-02-15
+devops engineer,Chennai,E-Commerce,"linux, aws, docker",7,17,2023-08-18
+web developer,Bangalore,EdTech,"css, html, javascript",3,15,2023-06-16
+cyber security analyst,Hyderabad,EdTech,"networking, linux, security",8,10,2023-05-03
+data scientist,Hyderabad,EdTech,"statistics, sql, python",4,20,2024-05-31
+web developer,Chennai,HealthTech,"javascript, html, react",7,12,2023-09-18
+ai engineer,Delhi,HealthTech,"nlp, python, ai",7,8,2023-06-17
+ai engineer,Delhi,HealthTech,"python, nlp, ai",7,10,2023-09-12
+web developer,Pune,IT,"javascript, html, css",2,19,2024-06-13
+software engineer,Mumbai,IT,"sql, oops, java",0,17,2024-12-30
+ml engineer,Hyderabad,HealthTech,"ml, python, deep learning",5,6,2023-03-22
+ml engineer,Chennai,HealthTech,"deep learning, tensorflow, python",4,14,2023-06-17
+software engineer,Pune,EdTech,"oops, java, sql",4,8,2024-12-26
+software engineer,Mumbai,HealthTech,"python, java, sql",1,8,2023-06-09
+software engineer,Chennai,E-Commerce,"oops, python, java",8,5,2023-05-08
+business analyst,Delhi,HealthTech,"excel, sql, communication",7,21,2024-12-14
+business analyst,Chennai,E-Commerce,"sql, excel, communication",2,24,2023-03-13
+ai engineer,Delhi,IT,"ml, ai, python",0,3,2023-10-22
+data scientist,Hyderabad,IT,"python, ml, sql",2,16,2024-06-03
+data scientist,Mumbai,HealthTech,"sql, python, ml",3,13,2024-06-12
+cyber security analyst,Hyderabad,E-Commerce,"security, networking, linux",0,14,2023-04-08
+software engineer,Mumbai,IT,"java, sql, python",5,14,2024-08-31
+devops engineer,Delhi,EdTech,"aws, kubernetes, linux",6,16,2023-02-17
+devops engineer,Pune,EdTech,"linux, docker, kubernetes",5,17,2023-09-15
+business analyst,Pune,FinTech,"excel, communication, sql",6,23,2024-08-15
+devops engineer,Mumbai,E-Commerce,"aws, docker, linux",3,14,2024-07-22
+cloud engineer,Mumbai,EdTech,"docker, linux, aws",4,22,2023-01-26
+data scientist,Delhi,FinTech,"ml, python, sql",0,25,2024-12-18
+ml engineer,Mumbai,E-Commerce,"ml, deep learning, python",7,17,2023-11-03
+business analyst,Chennai,FinTech,"excel, sql, communication",6,9,2023-12-01
+data scientist,Bangalore,EdTech,"sql, python, ml",2,18,2024-05-06
+devops engineer,Delhi,EdTech,"linux, kubernetes, docker",2,24,2023-06-25
+ml engineer,Chennai,IT,"python, tensorflow, ml",2,24,2024-02-18
+cyber security analyst,Chennai,HealthTech,"networking, security, linux",1,7,2024-02-12
+ml engineer,Pune,HealthTech,"ml, python, tensorflow",7,9,2024-09-20
+software engineer,Pune,HealthTech,"oops, python, sql",3,20,2023-12-17
+devops engineer,Mumbai,EdTech,"kubernetes, docker, linux",6,10,2023-10-27
+web developer,Hyderabad,IT,"html, javascript, react",0,22,2024-12-01
+software engineer,Hyderabad,HealthTech,"python, sql, oops",5,14,2023-07-27
+ai engineer,Hyderabad,HealthTech,"nlp, python, ml",3,15,2024-09-26
+business analyst,Pune,EdTech,"communication, excel, sql",7,4,2024-01-27
+business analyst,Mumbai,HealthTech,"excel, sql, communication",4,4,2023-09-19
+business analyst,Mumbai,FinTech,"excel, communication, sql",3,18,2024-11-17
+business analyst,Mumbai,FinTech,"sql, excel, communication",1,15,2023-01-24
+cyber security analyst,Chennai,HealthTech,"linux, networking, security",0,17,2023-05-27
+data analyst,Bangalore,IT,"excel, sql, python",3,16,2024-05-11
+data scientist,Hyderabad,FinTech,"statistics, sql, python",8,13,2023-09-27
+data analyst,Hyderabad,EdTech,"sql, power bi, excel",6,11,2023-05-27
+software engineer,Pune,FinTech,"java, oops, sql",1,22,2024-05-24
+software engineer,Mumbai,IT,"python, sql, oops",0,22,2023-06-24
+ml engineer,Pune,HealthTech,"tensorflow, python, deep learning",1,17,2023-03-02
+ml engineer,Hyderabad,EdTech,"tensorflow, ml, python",8,18,2023-12-23
+ai engineer,Pune,EdTech,"ml, ai, python",5,20,2023-11-27
+ml engineer,Pune,EdTech,"deep learning, tensorflow, python",8,7,2024-11-02
+ai engineer,Delhi,EdTech,"ai, python, nlp",2,10,2024-08-02
+cloud engineer,Mumbai,IT,"linux, docker, aws",2,25,2023-08-18
+ai engineer,Mumbai,HealthTech,"python, nlp, ml",0,18,2023-12-08
+software engineer,Delhi,EdTech,"python, oops, java",2,9,2024-01-22
+cloud engineer,Delhi,HealthTech,"aws, linux, docker",8,9,2024-06-21
+data scientist,Pune,EdTech,"ml, python, statistics",6,13,2024-02-21
+business analyst,Bangalore,E-Commerce,"sql, excel, communication",2,14,2024-08-14
+cloud engineer,Mumbai,IT,"aws, linux, azure",5,19,2023-06-01
+cyber security analyst,Mumbai,HealthTech,"security, linux, networking",5,21,2024-10-02
+data analyst,Hyderabad,HealthTech,"python, sql, power bi",2,12,2023-11-21
+cyber security analyst,Hyderabad,E-Commerce,"networking, security, linux",1,8,2023-10-14
+data scientist,Mumbai,FinTech,"ml, statistics, sql",0,3,2023-04-25
+ai engineer,Mumbai,FinTech,"nlp, ai, python",8,19,2024-05-30
+cyber security analyst,Mumbai,E-Commerce,"security, linux, networking",5,16,2024-06-17
+data scientist,Hyderabad,HealthTech,"statistics, ml, sql",7,17,2023-03-14
+web developer,Delhi,HealthTech,"html, react, javascript",0,17,2024-11-25
+business analyst,Pune,IT,"sql, communication, excel",2,17,2023-07-06
+business analyst,Chennai,HealthTech,"communication, sql, excel",0,21,2024-07-23
+data scientist,Mumbai,E-Commerce,"ml, sql, statistics",5,14,2024-02-18
+business analyst,Bangalore,EdTech,"communication, sql, excel",8,13,2024-01-21
+data scientist,Delhi,IT,"statistics, python, sql",0,8,2023-08-24
+cloud engineer,Hyderabad,FinTech,"linux, aws, azure",1,19,2023-01-25
+software engineer,Delhi,IT,"oops, java, sql",4,18,2023-04-24
+business analyst,Hyderabad,HealthTech,"excel, sql, communication",6,16,2023-11-18
+devops engineer,Delhi,IT,"docker, aws, kubernetes",1,21,2023-03-12
+web developer,Mumbai,EdTech,"javascript, html, react",0,21,2023-06-17
+web developer,Delhi,FinTech,"css, javascript, react",8,15,2024-09-13
+devops engineer,Hyderabad,E-Commerce,"aws, kubernetes, linux",3,16,2024-12-14
+ai engineer,Delhi,FinTech,"ai, ml, python",7,23,2023-08-10
+devops engineer,Pune,IT,"linux, docker, kubernetes",5,6,2024-04-15
+ml engineer,Delhi,EdTech,"python, ml, deep learning",0,14,2024-12-14
+business analyst,Hyderabad,IT,"communication, excel, sql",6,24,2024-08-31
+cloud engineer,Delhi,EdTech,"docker, linux, azure",0,8,2024-09-07
+web developer,Mumbai,FinTech,"css, react, html",7,25,2024-05-30
+data scientist,Delhi,IT,"statistics, ml, sql",1,3,2024-07-19
+business analyst,Bangalore,E-Commerce,"excel, sql, communication",7,9,2024-03-04
+ai engineer,Pune,EdTech,"ml, nlp, ai",0,12,2024-08-25
+cyber security analyst,Mumbai,IT,"security, linux, networking",7,20,2023-06-22
+web developer,Pune,EdTech,"css, javascript, html",3,24,2023-04-06
+devops engineer,Bangalore,FinTech,"linux, docker, aws",7,14,2024-08-29
+business analyst,Chennai,HealthTech,"communication, sql, excel",5,6,2023-06-06
+cyber security analyst,Bangalore,E-Commerce,"networking, security, linux",7,16,2023-03-09
+cloud engineer,Hyderabad,HealthTech,"aws, docker, azure",2,10,2024-09-19
+ai engineer,Mumbai,E-Commerce,"python, ai, nlp",2,25,2023-09-21
+data scientist,Hyderabad,FinTech,"statistics, sql, ml",7,20,2024-11-24
+cloud engineer,Mumbai,FinTech,"aws, azure, docker",4,22,2024-03-19
+software engineer,Delhi,HealthTech,"python, oops, java",8,21,2023-01-07
+ai engineer,Mumbai,E-Commerce,"nlp, ml, python",3,9,2023-01-31
+ml engineer,Chennai,HealthTech,"python, deep learning, tensorflow",4,18,2023-01-21
+software engineer,Hyderabad,IT,"python, oops, java",5,6,2024-04-18
+cloud engineer,Pune,EdTech,"aws, linux, azure",5,11,2023-04-07
+cyber security analyst,Bangalore,E-Commerce,"security, networking, linux",8,4,2023-03-11
+devops engineer,Bangalore,EdTech,"kubernetes, docker, aws",8,8,2024-10-28
+business analyst,Chennai,FinTech,"communication, sql, excel",7,4,2024-05-23
+software engineer,Hyderabad,EdTech,"python, java, sql",5,22,2023-04-21
+business analyst,Delhi,FinTech,"communication, excel, sql",3,23,2024-10-03
+ml engineer,Delhi,HealthTech,"deep learning, python, tensorflow",1,21,2023-09-22
+data analyst,Delhi,EdTech,"python, sql, power bi",1,24,2023-10-16
+ml engineer,Mumbai,E-Commerce,"tensorflow, ml, deep learning",4,21,2024-12-21
+business analyst,Hyderabad,FinTech,"sql, excel, communication",6,6,2023-07-04
+cloud engineer,Delhi,IT,"aws, azure, linux",2,18,2024-05-05
+data scientist,Pune,IT,"sql, statistics, ml",5,3,2024-08-06
+data scientist,Delhi,E-Commerce,"statistics, ml, python",6,20,2024-11-06
+cyber security analyst,Delhi,EdTech,"linux, security, networking",1,5,2023-02-19
+software engineer,Bangalore,IT,"python, oops, java",3,24,2024-04-19
+data analyst,Delhi,IT,"excel, sql, power bi",8,13,2024-05-28
+web developer,Chennai,EdTech,"css, html, react",6,21,2025-01-01
+data analyst,Bangalore,E-Commerce,"python, power bi, sql",7,9,2023-10-13
+devops engineer,Chennai,HealthTech,"linux, kubernetes, aws",0,23,2024-06-20
+data analyst,Hyderabad,EdTech,"python, sql, excel",5,20,2024-10-31
+ml engineer,Chennai,IT,"deep learning, python, tensorflow",1,25,2023-02-23
+web developer,Delhi,FinTech,"javascript, react, html",8,16,2024-11-16
+data scientist,Chennai,HealthTech,"ml, sql, python",3,5,2024-10-01
+cloud engineer,Delhi,FinTech,"linux, azure, aws",4,13,2024-04-13
+ml engineer,Bangalore,EdTech,"ml, tensorflow, deep learning",3,13,2024-10-05
+data analyst,Mumbai,HealthTech,"power bi, excel, sql",8,22,2023-12-14
+cloud engineer,Pune,HealthTech,"linux, aws, azure",3,13,2024-08-08
+cyber security analyst,Chennai,E-Commerce,"networking, linux, security",0,18,2024-04-23
+business analyst,Delhi,IT,"excel, communication, sql",2,10,2023-11-27
+ai engineer,Pune,EdTech,"nlp, ml, python",8,14,2023-09-10
+web developer,Bangalore,HealthTech,"javascript, html, react",3,5,2024-08-30
+business analyst,Mumbai,EdTech,"communication, excel, sql",7,4,2024-12-30
+ml engineer,Chennai,HealthTech,"deep learning, tensorflow, ml",8,11,2023-07-08
+data scientist,Hyderabad,IT,"python, statistics, ml",5,24,2024-08-16
+devops engineer,Pune,IT,"linux, aws, kubernetes",3,25,2023-03-05
+business analyst,Mumbai,FinTech,"sql, excel, communication",1,17,2024-10-22
+ml engineer,Pune,FinTech,"tensorflow, ml, deep learning",3,17,2023-02-20
+cyber security analyst,Chennai,EdTech,"networking, linux, security",2,13,2023-02-08
+ai engineer,Bangalore,EdTech,"ml, python, ai",6,7,2023-01-31
+web developer,Pune,HealthTech,"css, react, javascript",0,11,2024-04-23
+devops engineer,Pune,EdTech,"aws, linux, kubernetes",4,22,2024-10-13
+business analyst,Delhi,HealthTech,"communication, excel, sql",1,4,2024-05-22
+software engineer,Chennai,HealthTech,"python, sql, oops",1,5,2024-06-17
+cloud engineer,Bangalore,HealthTech,"azure, aws, docker",1,21,2023-09-05
+software engineer,Delhi,IT,"oops, sql, python",4,4,2023-06-03
+data scientist,Mumbai,IT,"sql, ml, statistics",1,22,2024-03-13
+software engineer,Delhi,HealthTech,"python, oops, sql",6,16,2024-10-05
+data scientist,Delhi,IT,"statistics, python, sql",2,13,2024-06-03
+software engineer,Chennai,IT,"oops, python, java",4,25,2023-05-16
+cyber security analyst,Chennai,IT,"networking, linux, security",3,4,2023-09-11
+cyber security analyst,Chennai,E-Commerce,"networking, security, linux",2,23,2023-07-13
+software engineer,Chennai,HealthTech,"python, sql, oops",6,15,2024-10-12
+devops engineer,Pune,E-Commerce,"aws, kubernetes, docker",1,12,2024-11-16
+business analyst,Bangalore,EdTech,"sql, communication, excel",2,18,2024-07-20
+cloud engineer,Hyderabad,IT,"docker, linux, aws",0,8,2024-07-06
+devops engineer,Delhi,FinTech,"kubernetes, docker, linux",6,15,2024-01-29
+cloud engineer,Chennai,EdTech,"azure, linux, aws",1,11,2023-04-19
+cloud engineer,Pune,IT,"aws, linux, azure",5,11,2024-06-07
+data analyst,Pune,FinTech,"excel, sql, power bi",0,8,2023-11-11
+cyber security analyst,Mumbai,FinTech,"networking, security, linux",1,6,2024-03-18
+data scientist,Delhi,IT,"ml, sql, statistics",8,3,2024-05-08
+data analyst,Hyderabad,IT,"excel, power bi, python",6,15,2024-10-13
+business analyst,Chennai,FinTech,"excel, sql, communication",6,3,2023-02-05
+devops engineer,Bangalore,E-Commerce,"docker, aws, kubernetes",6,22,2024-07-26
+data scientist,Hyderabad,FinTech,"ml, sql, python",3,10,2024-05-06
+data analyst,Bangalore,IT,"excel, sql, python",0,15,2023-05-27
+devops engineer,Mumbai,FinTech,"kubernetes, docker, linux",5,19,2023-06-26
+software engineer,Pune,EdTech,"java, sql, oops",1,13,2023-05-11
+business analyst,Mumbai,FinTech,"sql, excel, communication",3,21,2024-02-17
+cyber security analyst,Chennai,EdTech,"security, linux, networking",5,20,2024-03-24
+business analyst,Delhi,E-Commerce,"excel, communication, sql",7,16,2023-04-06
+data scientist,Pune,HealthTech,"ml, statistics, python",0,23,2023-11-02
+data scientist,Delhi,E-Commerce,"ml, python, sql",7,18,2024-08-25
+devops engineer,Hyderabad,FinTech,"kubernetes, aws, docker",6,13,2024-10-06
+data analyst,Chennai,E-Commerce,"power bi, sql, excel",8,15,2024-06-10
+web developer,Mumbai,E-Commerce,"react, html, javascript",1,10,2023-04-28
+business analyst,Delhi,HealthTech,"excel, communication, sql",5,9,2024-09-11
+cyber security analyst,Chennai,IT,"security, networking, linux",5,9,2024-12-26
+data analyst,Hyderabad,IT,"excel, python, power bi",3,21,2023-01-08
+cloud engineer,Delhi,FinTech,"docker, aws, azure",8,24,2023-09-19
+cloud engineer,Pune,HealthTech,"azure, linux, aws",6,21,2024-09-11
+data scientist,Chennai,FinTech,"sql, ml, statistics",1,11,2023-01-30
+data analyst,Pune,FinTech,"python, power bi, excel",3,22,2023-11-09
+ml engineer,Pune,IT,"python, ml, tensorflow",1,15,2023-02-04
+data analyst,Delhi,IT,"excel, power bi, sql",7,16,2024-10-08
+cyber security analyst,Delhi,FinTech,"linux, security, networking",7,15,2024-02-08
+ai engineer,Delhi,EdTech,"ml, python, nlp",7,22,2024-07-15
+web developer,Mumbai,EdTech,"javascript, css, react",8,5,2024-02-24
+ml engineer,Hyderabad,HealthTech,"deep learning, ml, python",6,16,2023-08-23
+ai engineer,Delhi,EdTech,"python, nlp, ml",1,8,2024-08-17
+ai engineer,Hyderabad,EdTech,"ai, python, nlp",5,25,2023-11-27
+software engineer,Hyderabad,EdTech,"java, python, sql",1,11,2024-04-03
+cyber security analyst,Hyderabad,HealthTech,"security, networking, linux",8,9,2023-01-27
+software engineer,Mumbai,IT,"java, oops, sql",8,13,2024-01-20
+data scientist,Bangalore,HealthTech,"ml, python, sql",3,7,2023-01-16
+cyber security analyst,Bangalore,FinTech,"linux, security, networking",4,4,2024-12-26
+software engineer,Hyderabad,EdTech,"python, java, sql",7,11,2023-10-31
+software engineer,Chennai,HealthTech,"python, oops, sql",7,19,2023-11-19
+ai engineer,Delhi,E-Commerce,"ml, python, ai",4,16,2024-12-24
+cyber security analyst,Bangalore,HealthTech,"networking, security, linux",2,18,2023-06-11
+devops engineer,Hyderabad,IT,"docker, aws, kubernetes",7,15,2023-03-06
+cloud engineer,Chennai,HealthTech,"azure, aws, linux",0,10,2023-08-10
+cyber security analyst,Delhi,FinTech,"linux, networking, security",4,21,2023-06-27
+cyber security analyst,Mumbai,EdTech,"networking, security, linux",3,12,2023-07-31
+ml engineer,Chennai,FinTech,"ml, deep learning, python",7,17,2023-07-27
+cloud engineer,Mumbai,IT,"azure, docker, aws",3,3,2024-09-12
+web developer,Delhi,EdTech,"html, css, react",8,8,2023-05-18
+ai engineer,Mumbai,IT,"ai, python, nlp",5,9,2024-08-20
+cyber security analyst,Bangalore,EdTech,"security, linux, networking",1,21,2023-06-04
+web developer,Bangalore,EdTech,"javascript, react, css",3,22,2023-07-25
+web developer,Pune,EdTech,"html, css, javascript",0,17,2023-07-29
+ml engineer,Hyderabad,FinTech,"python, deep learning, tensorflow",5,5,2024-11-21
+business analyst,Pune,FinTech,"communication, sql, excel",3,17,2024-05-10
+software engineer,Bangalore,IT,"sql, java, python",7,13,2024-02-04
+ai engineer,Hyderabad,EdTech,"python, nlp, ai",1,12,2023-06-25
+cloud engineer,Mumbai,EdTech,"azure, linux, docker",4,23,2023-03-27
+web developer,Pune,FinTech,"html, javascript, react",3,16,2024-11-10
+software engineer,Hyderabad,HealthTech,"sql, python, oops",2,22,2024-08-28
+web developer,Delhi,EdTech,"css, javascript, react",8,5,2024-09-20
+ml engineer,Chennai,FinTech,"deep learning, ml, tensorflow",5,22,2023-09-12
+web developer,Chennai,E-Commerce,"css, html, react",7,11,2024-02-01
+data scientist,Mumbai,E-Commerce,"python, statistics, ml",6,14,2023-06-22
+ml engineer,Chennai,FinTech,"ml, tensorflow, deep learning",8,13,2023-12-05
+ai engineer,Chennai,EdTech,"nlp, ml, python",6,22,2023-09-15
+devops engineer,Bangalore,FinTech,"linux, aws, kubernetes",3,14,2024-07-11
+cloud engineer,Chennai,HealthTech,"aws, azure, linux",1,6,2023-09-28
+web developer,Hyderabad,EdTech,"javascript, html, css",7,20,2024-06-02
+devops engineer,Delhi,E-Commerce,"aws, kubernetes, docker",2,13,2023-06-07
+cloud engineer,Hyderabad,HealthTech,"aws, linux, docker",3,25,2024-02-23
+web developer,Bangalore,E-Commerce,"css, javascript, html",2,5,2023-07-15
+web developer,Hyderabad,E-Commerce,"css, javascript, html",0,21,2024-11-30
+ai engineer,Mumbai,HealthTech,"python, ml, ai",3,19,2023-08-20
+cyber security analyst,Pune,EdTech,"security, networking, linux",3,21,2024-07-19
+ai engineer,Chennai,EdTech,"ai, ml, nlp",7,19,2023-09-03
+web developer,Chennai,HealthTech,"css, html, javascript",5,12,2023-09-27
+data analyst,Mumbai,EdTech,"excel, python, sql",6,14,2024-05-15
+software engineer,Bangalore,IT,"oops, java, sql",1,20,2024-10-10
+web developer,Chennai,HealthTech,"react, javascript, css",2,18,2023-11-14
+data scientist,Chennai,FinTech,"statistics, sql, ml",1,15,2023-05-24
+data analyst,Bangalore,E-Commerce,"power bi, sql, python",2,17,2023-03-03
+web developer,Pune,E-Commerce,"javascript, react, html",1,24,2024-06-21
+ml engineer,Pune,HealthTech,"deep learning, tensorflow, ml",1,12,2024-12-29
+ai engineer,Bangalore,FinTech,"python, ml, ai",7,20,2023-01-26
+web developer,Mumbai,IT,"javascript, react, css",6,3,2024-03-12
+cloud engineer,Bangalore,E-Commerce,"azure, docker, aws",3,21,2023-02-06
+ai engineer,Bangalore,FinTech,"nlp, ai, ml",3,7,2024-10-17
+cloud engineer,Hyderabad,HealthTech,"aws, azure, linux",1,22,2024-04-15
+cyber security analyst,Hyderabad,IT,"security, networking, linux",0,6,2023-03-13
+data analyst,Pune,HealthTech,"sql, excel, python",2,6,2024-06-26
+cloud engineer,Mumbai,E-Commerce,"docker, linux, aws",1,24,2024-03-13
+business analyst,Chennai,FinTech,"sql, communication, excel",2,10,2024-05-28
+ml engineer,Delhi,IT,"ml, tensorflow, python",1,17,2023-11-17
+devops engineer,Delhi,IT,"kubernetes, linux, aws",5,13,2023-07-15
+cyber security analyst,Bangalore,EdTech,"networking, security, linux",2,7,2023-11-17
+ai engineer,Mumbai,EdTech,"ml, ai, python",6,10,2023-05-16
+web developer,Hyderabad,EdTech,"css, javascript, html",5,24,2023-10-18
+data scientist,Hyderabad,IT,"statistics, sql, python",1,3,2024-08-29
+cloud engineer,Hyderabad,FinTech,"aws, linux, azure",2,19,2023-08-23
+data scientist,Mumbai,E-Commerce,"ml, python, sql",5,21,2023-12-18
+ml engineer,Pune,HealthTech,"tensorflow, ml, deep learning",7,6,2023-03-04
+devops engineer,Bangalore,E-Commerce,"docker, aws, linux",1,11,2024-04-28
+devops engineer,Chennai,E-Commerce,"aws, linux, kubernetes",6,16,2023-04-17
+ai engineer,Hyderabad,FinTech,"nlp, ml, python",7,5,2024-08-17
+web developer,Bangalore,HealthTech,"react, css, html",5,24,2023-07-16
+software engineer,Bangalore,EdTech,"sql, oops, java",1,22,2024-10-31
+web developer,Delhi,HealthTech,"react, html, javascript",2,14,2024-12-15
+cloud engineer,Chennai,EdTech,"linux, aws, azure",7,7,2023-07-17
+cloud engineer,Bangalore,E-Commerce,"aws, docker, linux",4,21,2023-07-13
+cyber security analyst,Mumbai,E-Commerce,"linux, security, networking",2,22,2024-10-18
+ai engineer,Chennai,E-Commerce,"ai, nlp, python",8,6,2024-03-26
+software engineer,Bangalore,FinTech,"python, sql, java",5,20,2023-09-19
+web developer,Pune,E-Commerce,"html, css, react",5,16,2024-10-30
+ai engineer,Hyderabad,E-Commerce,"nlp, ai, python",0,12,2024-06-11
+data scientist,Delhi,HealthTech,"python, sql, ml",6,25,2024-12-28
+data analyst,Hyderabad,EdTech,"power bi, excel, sql",8,19,2023-04-14
+cyber security analyst,Hyderabad,HealthTech,"linux, security, networking",1,6,2023-08-11
+cloud engineer,Hyderabad,IT,"aws, azure, docker",6,21,2024-03-27
+cloud engineer,Hyderabad,IT,"linux, docker, azure",4,16,2023-03-25
+data analyst,Chennai,FinTech,"python, sql, excel",8,15,2024-09-27
+cyber security analyst,Delhi,EdTech,"linux, networking, security",6,6,2023-05-13
+software engineer,Chennai,FinTech,"oops, sql, python",7,22,2023-06-10
+software engineer,Delhi,FinTech,"python, java, sql",2,19,2024-09-11
+ai engineer,Pune,HealthTech,"ml, python, ai",8,10,2023-01-19
+cyber security analyst,Mumbai,FinTech,"networking, security, linux",1,8,2023-10-14
+data scientist,Delhi,EdTech,"python, sql, ml",8,8,2023-11-04
+cloud engineer,Delhi,FinTech,"docker, linux, aws",3,24,2023-11-22
+cloud engineer,Pune,IT,"linux, docker, azure",2,21,2023-12-19
+data scientist,Chennai,EdTech,"sql, statistics, python",0,11,2023-05-04
+web developer,Mumbai,EdTech,"javascript, html, css",0,15,2024-11-26
+devops engineer,Pune,E-Commerce,"kubernetes, aws, linux",4,8,2023-07-31
+business analyst,Bangalore,IT,"communication, sql, excel",0,13,2023-09-08
+web developer,Pune,FinTech,"javascript, html, css",0,11,2023-09-14
+devops engineer,Chennai,IT,"aws, linux, docker",6,10,2024-09-22
+ai engineer,Bangalore,HealthTech,"ai, python, nlp",5,4,2024-05-04
+cyber security analyst,Hyderabad,FinTech,"security, networking, linux",6,17,2024-08-07
+data analyst,Hyderabad,E-Commerce,"python, excel, sql",8,19,2023-01-12
+cyber security analyst,Mumbai,EdTech,"security, linux, networking",4,11,2023-02-27
+cloud engineer,Hyderabad,E-Commerce,"docker, aws, azure",7,12,2024-03-13
+ai engineer,Bangalore,EdTech,"nlp, ai, python",0,5,2024-01-01
+ml engineer,Hyderabad,HealthTech,"tensorflow, deep learning, python",6,18,2023-02-02
+software engineer,Hyderabad,EdTech,"java, sql, oops",4,21,2023-09-23
+cloud engineer,Hyderabad,IT,"linux, azure, docker",6,6,2023-04-01
+data analyst,Hyderabad,HealthTech,"power bi, python, sql",1,21,2023-03-15
+ml engineer,Chennai,IT,"tensorflow, ml, deep learning",1,3,2023-11-02
+web developer,Bangalore,E-Commerce,"html, css, react",1,24,2023-01-09
+software engineer,Bangalore,FinTech,"java, python, oops",7,7,2023-05-16
+cloud engineer,Hyderabad,FinTech,"linux, docker, azure",6,5,2023-05-03
+data analyst,Hyderabad,IT,"power bi, excel, python",8,18,2023-08-25
+business analyst,Delhi,EdTech,"excel, sql, communication",3,14,2023-03-07
+ml engineer,Mumbai,EdTech,"tensorflow, deep learning, ml",4,13,2024-04-19
+business analyst,Chennai,HealthTech,"excel, communication, sql",8,3,2024-05-22
+web developer,Delhi,E-Commerce,"css, react, html",2,8,2023-12-22
+business analyst,Mumbai,EdTech,"excel, sql, communication",4,22,2024-09-26
+data scientist,Mumbai,HealthTech,"statistics, sql, python",0,5,2024-08-24
+cyber security analyst,Chennai,FinTech,"linux, security, networking",1,23,2023-10-03
+ml engineer,Chennai,IT,"ml, tensorflow, python",8,18,2024-05-16
+data analyst,Chennai,EdTech,"excel, sql, python",0,21,2023-08-25
+data analyst,Chennai,EdTech,"excel, power bi, sql",5,25,2023-08-06
+ai engineer,Delhi,FinTech,"ai, ml, python",6,4,2024-08-03
+ml engineer,Pune,E-Commerce,"deep learning, tensorflow, python",3,24,2023-11-25
+web developer,Chennai,FinTech,"html, javascript, css",2,4,2024-06-26
+software engineer,Hyderabad,EdTech,"oops, python, java",7,24,2023-10-05
+ai engineer,Pune,FinTech,"nlp, ml, ai",0,15,2024-03-27
+devops engineer,Chennai,IT,"docker, aws, linux",2,5,2024-06-21
+devops engineer,Chennai,EdTech,"linux, kubernetes, docker",1,7,2023-02-10
+ai engineer,Pune,EdTech,"ml, python, ai",5,22,2024-05-01
+devops engineer,Delhi,E-Commerce,"linux, aws, kubernetes",3,19,2023-02-21
+ml engineer,Pune,IT,"ml, deep learning, python",1,5,2024-01-26
+ml engineer,Pune,EdTech,"tensorflow, ml, python",0,18,2024-03-28
+data scientist,Pune,EdTech,"ml, python, sql",4,21,2023-10-09
+web developer,Hyderabad,EdTech,"html, css, javascript",4,24,2023-02-25
+ml engineer,Mumbai,IT,"python, tensorflow, deep learning",8,12,2023-10-13
+devops engineer,Hyderabad,IT,"kubernetes, docker, aws",1,21,2024-01-03
+web developer,Chennai,E-Commerce,"css, javascript, react",7,25,2024-07-22
+devops engineer,Chennai,HealthTech,"aws, docker, linux",8,8,2024-08-22
+ml engineer,Pune,IT,"tensorflow, ml, deep learning",2,5,2023-12-14
+software engineer,Hyderabad,FinTech,"java, oops, python",1,16,2023-07-22
+software engineer,Delhi,HealthTech,"java, oops, python",0,14,2024-10-16
+web developer,Chennai,HealthTech,"javascript, html, css",7,13,2024-06-13
+ml engineer,Hyderabad,HealthTech,"deep learning, ml, python",4,21,2024-01-23
+cyber security analyst,Chennai,FinTech,"linux, networking, security",5,22,2024-10-13
+web developer,Pune,HealthTech,"css, html, javascript",1,15,2023-01-01
+software engineer,Bangalore,IT,"java, oops, sql",2,18,2023-05-01
+business analyst,Delhi,E-Commerce,"communication, excel, sql",2,11,2023-11-22
+business analyst,Chennai,EdTech,"sql, excel, communication",3,20,2023-08-03
+data analyst,Delhi,HealthTech,"sql, excel, python",4,25,2024-01-23
+cloud engineer,Delhi,E-Commerce,"aws, docker, linux",8,16,2024-07-26
+cloud engineer,Mumbai,HealthTech,"linux, azure, aws",8,5,2024-09-02
+ai engineer,Delhi,E-Commerce,"ml, ai, nlp",8,17,2024-01-27
+ml engineer,Bangalore,HealthTech,"tensorflow, deep learning, ml",6,14,2024-06-20
+ml engineer,Pune,FinTech,"deep learning, python, tensorflow",3,7,2023-01-12
+data analyst,Bangalore,E-Commerce,"power bi, python, sql",2,22,2024-02-15
+software engineer,Mumbai,IT,"oops, java, python",0,7,2023-07-19
+data scientist,Delhi,EdTech,"sql, ml, statistics",0,17,2023-07-06
+data scientist,Pune,IT,"ml, sql, statistics",3,21,2024-07-04
+web developer,Hyderabad,EdTech,"css, html, javascript",8,23,2024-05-31
+devops engineer,Chennai,IT,"kubernetes, aws, linux",6,4,2023-09-18
+cloud engineer,Delhi,HealthTech,"linux, aws, azure",0,22,2023-02-16
+cloud engineer,Bangalore,FinTech,"linux, docker, aws",8,5,2023-03-15
+cyber security analyst,Bangalore,IT,"security, networking, linux",6,8,2023-07-02
+data scientist,Delhi,IT,"python, ml, statistics",8,13,2023-12-21
+ai engineer,Delhi,EdTech,"ai, python, nlp",1,25,2023-03-19
+data analyst,Mumbai,EdTech,"excel, python, power bi",4,16,2024-06-09
+ai engineer,Mumbai,EdTech,"ml, nlp, ai",2,8,2023-09-11
+business analyst,Pune,HealthTech,"excel, communication, sql",5,3,2024-10-24
+ml engineer,Pune,EdTech,"ml, python, tensorflow",6,19,2023-12-26
+data scientist,Pune,EdTech,"sql, python, statistics",4,22,2024-06-17
+ai engineer,Delhi,HealthTech,"ai, nlp, python",4,15,2024-11-10
+software engineer,Delhi,E-Commerce,"java, oops, python",8,10,2024-04-09
+web developer,Mumbai,FinTech,"html, react, javascript",8,11,2024-08-23
+business analyst,Chennai,E-Commerce,"excel, sql, communication",1,6,2023-06-01
+cyber security analyst,Chennai,IT,"linux, security, networking",0,4,2024-10-02
+ai engineer,Pune,IT,"nlp, python, ml",7,20,2024-03-19
+web developer,Chennai,IT,"react, html, javascript",1,25,2024-02-07
+ai engineer,Pune,EdTech,"nlp, ml, python",3,20,2023-10-19
+web developer,Bangalore,EdTech,"javascript, html, react",3,16,2023-10-03
+ml engineer,Delhi,FinTech,"deep learning, python, tensorflow",4,7,2024-07-14
+software engineer,Mumbai,EdTech,"java, sql, python",6,21,2023-05-20
+ml engineer,Mumbai,FinTech,"tensorflow, deep learning, python",3,6,2023-03-02
+cyber security analyst,Pune,E-Commerce,"networking, security, linux",5,20,2023-01-06
+data analyst,Hyderabad,IT,"excel, power bi, sql",7,5,2023-05-09
+ml engineer,Mumbai,EdTech,"tensorflow, deep learning, ml",6,12,2024-09-06
+software engineer,Delhi,HealthTech,"sql, oops, java",2,4,2023-09-18
+devops engineer,Hyderabad,IT,"kubernetes, aws, docker",0,20,2023-10-29
+data analyst,Hyderabad,E-Commerce,"python, excel, power bi",8,4,2023-05-12
+devops engineer,Pune,EdTech,"kubernetes, docker, linux",4,11,2023-04-30
+cloud engineer,Bangalore,FinTech,"azure, linux, aws",8,10,2024-07-07
+cloud engineer,Hyderabad,HealthTech,"docker, linux, aws",3,24,2023-04-11
+ai engineer,Pune,E-Commerce,"ai, python, ml",2,15,2023-10-17
+devops engineer,Bangalore,IT,"kubernetes, linux, docker",5,9,2023-11-04
+ai engineer,Bangalore,IT,"nlp, python, ai",8,3,2023-12-10
+data analyst,Chennai,EdTech,"excel, sql, python",1,12,2024-10-14
+ml engineer,Hyderabad,EdTech,"deep learning, ml, python",0,11,2023-04-11
+devops engineer,Pune,HealthTech,"kubernetes, aws, linux",3,25,2024-04-09
+data scientist,Chennai,E-Commerce,"sql, statistics, ml",2,16,2024-08-01
+devops engineer,Hyderabad,EdTech,"aws, docker, linux",2,11,2023-01-01
+data scientist,Hyderabad,EdTech,"ml, python, sql",2,14,2023-03-08
+data analyst,Chennai,FinTech,"power bi, python, sql",4,13,2024-08-28
+cyber security analyst,Delhi,IT,"security, networking, linux",1,9,2023-12-15
+cloud engineer,Hyderabad,EdTech,"azure, docker, linux",5,19,2024-04-18
+ml engineer,Chennai,IT,"deep learning, tensorflow, python",5,10,2023-04-10
+business analyst,Pune,E-Commerce,"sql, excel, communication",1,16,2023-06-20
+software engineer,Delhi,FinTech,"java, oops, python",0,24,2023-01-12
+ai engineer,Pune,IT,"ai, nlp, python",0,8,2023-02-28
+ml engineer,Chennai,IT,"tensorflow, python, deep learning",7,10,2023-11-13
+cyber security analyst,Delhi,EdTech,"security, networking, linux",4,14,2023-09-04
+business analyst,Chennai,EdTech,"communication, sql, excel",6,19,2024-11-21
+web developer,Pune,E-Commerce,"html, javascript, react",4,14,2024-09-06
+software engineer,Delhi,EdTech,"java, python, sql",5,23,2024-09-17
+cyber security analyst,Bangalore,EdTech,"security, linux, networking",6,7,2023-04-08
+business analyst,Chennai,EdTech,"excel, communication, sql",3,13,2023-05-08
+data scientist,Mumbai,E-Commerce,"python, statistics, ml",8,18,2023-03-14
+data analyst,Hyderabad,EdTech,"python, power bi, sql",3,3,2023-08-07
+business analyst,Chennai,FinTech,"excel, sql, communication",1,24,2023-02-20
+ml engineer,Hyderabad,HealthTech,"tensorflow, ml, deep learning",6,16,2024-05-02
+data analyst,Pune,IT,"excel, python, power bi",8,18,2023-08-29
+web developer,Delhi,IT,"javascript, css, html",1,9,2023-01-27
+business analyst,Pune,IT,"excel, sql, communication",7,15,2024-05-22
+ai engineer,Hyderabad,IT,"python, nlp, ai",1,13,2023-08-10
+web developer,Delhi,FinTech,"css, javascript, html",5,15,2024-03-10
+software engineer,Pune,IT,"sql, python, java",8,22,2023-12-28
+web developer,Hyderabad,IT,"javascript, html, css",4,10,2023-06-20
+software engineer,Delhi,EdTech,"python, oops, java",2,25,2024-04-02
+cloud engineer,Pune,HealthTech,"docker, linux, aws",6,8,2023-06-11
+data analyst,Hyderabad,EdTech,"excel, python, sql",7,22,2024-01-30
+data scientist,Chennai,IT,"statistics, sql, ml",7,8,2023-05-29
+ai engineer,Chennai,FinTech,"python, ml, ai",8,9,2023-07-05
+devops engineer,Chennai,FinTech,"kubernetes, docker, linux",3,23,2023-07-03
+cyber security analyst,Bangalore,FinTech,"security, linux, networking",4,7,2024-04-12
+cloud engineer,Hyderabad,E-Commerce,"docker, linux, azure",6,13,2023-07-19
+ai engineer,Chennai,IT,"python, ai, ml",7,21,2024-09-18
+cloud engineer,Bangalore,HealthTech,"linux, aws, azure",2,10,2023-02-23
+web developer,Chennai,IT,"html, css, javascript",1,12,2024-12-09
+web developer,Pune,EdTech,"html, css, javascript",1,10,2023-11-09
+cyber security analyst,Bangalore,IT,"security, networking, linux",3,8,2023-06-03
+ml engineer,Bangalore,FinTech,"ml, python, deep learning",4,4,2023-01-13
+devops engineer,Pune,HealthTech,"kubernetes, linux, aws",3,16,2024-10-25
+data analyst,Delhi,IT,"python, sql, power bi",7,9,2024-08-28
+data scientist,Bangalore,HealthTech,"statistics, python, ml",4,12,2024-04-19
+web developer,Delhi,EdTech,"javascript, css, html",3,11,2024-08-03
+web developer,Pune,HealthTech,"css, javascript, react",2,5,2024-09-02
+data scientist,Chennai,E-Commerce,"python, sql, statistics",7,13,2023-05-17
+ml engineer,Pune,HealthTech,"python, tensorflow, ml",4,8,2024-12-10
+cloud engineer,Mumbai,FinTech,"docker, aws, linux",1,24,2024-04-25
+cloud engineer,Chennai,E-Commerce,"docker, aws, linux",6,16,2023-10-20
+business analyst,Mumbai,IT,"communication, sql, excel",0,3,2024-11-16
+ai engineer,Mumbai,HealthTech,"ml, nlp, python",5,10,2024-08-22
+cyber security analyst,Hyderabad,IT,"networking, linux, security",8,11,2023-10-22
+web developer,Pune,E-Commerce,"javascript, css, html",3,14,2023-05-20
+software engineer,Pune,IT,"sql, java, oops",6,4,2024-10-28
+data analyst,Hyderabad,HealthTech,"python, power bi, sql",1,23,2024-12-28
+business analyst,Hyderabad,FinTech,"sql, communication, excel",8,25,2023-07-22
+cloud engineer,Pune,EdTech,"linux, docker, azure",7,5,2023-06-23
+cloud engineer,Pune,E-Commerce,"docker, aws, azure",1,10,2024-02-19
+data scientist,Delhi,EdTech,"sql, ml, python",0,23,2023-03-07
+ml engineer,Bangalore,HealthTech,"python, ml, deep learning",6,12,2024-07-11
+devops engineer,Chennai,E-Commerce,"linux, aws, kubernetes",6,19,2023-01-27
+ml engineer,Pune,E-Commerce,"ml, deep learning, tensorflow",1,4,2023-11-01
+cloud engineer,Pune,EdTech,"docker, azure, aws",8,22,2024-09-13
+ai engineer,Pune,EdTech,"ml, nlp, ai",8,17,2023-08-30
+web developer,Delhi,FinTech,"html, react, css",0,12,2024-01-03
+ai engineer,Hyderabad,EdTech,"nlp, ai, ml",8,24,2023-06-12
+cyber security analyst,Mumbai,HealthTech,"networking, security, linux",6,7,2024-11-01
+ai engineer,Hyderabad,EdTech,"ai, python, nlp",1,7,2023-10-09
+business analyst,Pune,EdTech,"sql, communication, excel",0,18,2024-03-14
+data analyst,Mumbai,E-Commerce,"power bi, python, sql",4,7,2023-05-05
+data analyst,Chennai,E-Commerce,"excel, python, power bi",7,13,2023-04-15
+data analyst,Delhi,FinTech,"sql, power bi, excel",4,13,2024-06-04
+devops engineer,Delhi,HealthTech,"linux, kubernetes, docker",0,7,2024-12-01
+ml engineer,Hyderabad,EdTech,"deep learning, tensorflow, python",8,20,2023-06-23
+business analyst,Delhi,E-Commerce,"sql, communication, excel",1,5,2024-05-01
+web developer,Mumbai,EdTech,"css, html, react",3,11,2024-01-30
+cloud engineer,Delhi,IT,"aws, docker, linux",3,16,2023-03-08
+cloud engineer,Bangalore,IT,"linux, aws, docker",1,13,2024-08-25
+cloud engineer,Pune,HealthTech,"aws, azure, linux",1,23,2023-06-16
+cloud engineer,Delhi,EdTech,"aws, azure, linux",7,24,2023-11-09
+web developer,Hyderabad,FinTech,"javascript, html, react",0,14,2024-11-23
+software engineer,Mumbai,FinTech,"sql, java, oops",7,4,2024-04-30
+ai engineer,Chennai,EdTech,"nlp, ml, ai",2,4,2024-10-24
+devops engineer,Pune,IT,"aws, linux, docker",8,7,2023-08-28
+data scientist,Bangalore,EdTech,"statistics, sql, python",4,14,2023-02-21
+cloud engineer,Hyderabad,HealthTech,"azure, docker, aws",6,7,2024-11-22
+cyber security analyst,Hyderabad,IT,"linux, networking, security",5,3,2024-06-28
+ml engineer,Pune,IT,"deep learning, tensorflow, ml",1,19,2023-08-02
+ai engineer,Chennai,E-Commerce,"ai, python, ml",0,23,2024-07-06
+business analyst,Bangalore,EdTech,"excel, communication, sql",1,10,2023-05-21
+cyber security analyst,Hyderabad,HealthTech,"networking, linux, security",1,13,2023-03-25
+web developer,Chennai,EdTech,"react, javascript, css",5,16,2024-09-13
+data analyst,Pune,FinTech,"sql, python, power bi",5,8,2024-04-23
+ml engineer,Hyderabad,EdTech,"ml, deep learning, tensorflow",6,18,2024-07-08
+business analyst,Delhi,HealthTech,"excel, communication, sql",5,22,2023-11-01
+cloud engineer,Pune,EdTech,"aws, linux, docker",0,12,2024-09-18
+web developer,Delhi,FinTech,"react, html, javascript",6,16,2023-04-12
+data scientist,Pune,IT,"python, statistics, sql",8,10,2024-06-16
+devops engineer,Bangalore,E-Commerce,"docker, linux, aws",8,4,2023-07-27
+cyber security analyst,Pune,IT,"security, linux, networking",0,20,2023-11-26
+ai engineer,Bangalore,FinTech,"python, ml, ai",1,11,2023-01-25
+software engineer,Mumbai,HealthTech,"oops, python, sql",0,13,2024-11-22
+cloud engineer,Bangalore,FinTech,"linux, azure, docker",8,21,2023-02-13
+cyber security analyst,Bangalore,EdTech,"security, networking, linux",5,4,2024-02-26
+cloud engineer,Mumbai,HealthTech,"docker, azure, aws",8,14,2024-01-09
+data scientist,Pune,FinTech,"sql, ml, statistics",1,11,2024-09-17
+cloud engineer,Mumbai,E-Commerce,"docker, linux, azure",7,13,2023-06-13
+web developer,Mumbai,EdTech,"javascript, css, html",0,23,2023-05-04
+software engineer,Chennai,E-Commerce,"java, sql, python",5,10,2024-02-13
+ml engineer,Pune,E-Commerce,"deep learning, python, tensorflow",7,4,2023-10-05
+cloud engineer,Bangalore,IT,"linux, azure, docker",2,11,2024-02-27
+data scientist,Hyderabad,FinTech,"ml, statistics, sql",0,3,2023-01-15
+ai engineer,Pune,E-Commerce,"ai, python, nlp",1,8,2023-03-18
+business analyst,Delhi,IT,"excel, communication, sql",2,7,2023-01-28
+software engineer,Chennai,HealthTech,"oops, python, sql",4,11,2023-02-12
+software engineer,Pune,HealthTech,"oops, sql, python",4,20,2024-12-22
+devops engineer,Chennai,HealthTech,"aws, docker, linux",6,12,2023-11-27
+software engineer,Chennai,E-Commerce,"oops, java, sql",0,17,2024-07-23
+devops engineer,Bangalore,FinTech,"linux, docker, aws",6,4,2023-01-06
+cyber security analyst,Delhi,HealthTech,"security, linux, networking",7,6,2023-06-16
+ml engineer,Delhi,IT,"ml, tensorflow, deep learning",0,13,2024-04-26
+software engineer,Chennai,IT,"python, java, sql",6,12,2024-12-04
+ml engineer,Mumbai,E-Commerce,"ml, deep learning, tensorflow",8,13,2024-08-18
+data scientist,Bangalore,EdTech,"sql, ml, statistics",8,21,2023-02-08
+data analyst,Delhi,FinTech,"power bi, excel, python",0,9,2024-12-13
+cloud engineer,Hyderabad,FinTech,"docker, aws, linux",6,17,2024-05-23
+data scientist,Bangalore,FinTech,"sql, ml, python",6,9,2024-08-27
+data analyst,Pune,IT,"python, sql, power bi",2,3,2024-05-21
+software engineer,Pune,IT,"oops, python, java",1,6,2024-11-02
+devops engineer,Mumbai,IT,"linux, aws, kubernetes",8,19,2024-11-21
+business analyst,Bangalore,FinTech,"communication, sql, excel",1,19,2023-06-12
+cloud engineer,Chennai,E-Commerce,"docker, linux, aws",0,18,2024-07-14
+cyber security analyst,Mumbai,FinTech,"linux, security, networking",7,12,2023-12-05
+ai engineer,Bangalore,HealthTech,"nlp, ml, ai",5,14,2024-05-15
+software engineer,Chennai,E-Commerce,"oops, sql, java",8,25,2024-08-31
+devops engineer,Mumbai,EdTech,"docker, aws, linux",4,12,2023-12-23
+data scientist,Pune,IT,"sql, ml, statistics",4,9,2023-01-12
+software engineer,Hyderabad,E-Commerce,"sql, oops, java",7,22,2024-09-07
+ai engineer,Bangalore,HealthTech,"ml, python, nlp",1,12,2023-03-22
+web developer,Chennai,EdTech,"html, css, react",1,20,2024-06-23
+business analyst,Bangalore,E-Commerce,"sql, excel, communication",5,25,2023-12-11
+business analyst,Hyderabad,E-Commerce,"sql, excel, communication",4,7,2023-06-17
+ml engineer,Mumbai,EdTech,"ml, deep learning, tensorflow",6,18,2024-02-21
+devops engineer,Mumbai,IT,"kubernetes, docker, linux",7,6,2023-07-08
+cloud engineer,Delhi,EdTech,"azure, docker, linux",4,23,2024-12-12
+devops engineer,Delhi,IT,"aws, linux, docker",4,16,2024-04-25
+ml engineer,Chennai,EdTech,"python, ml, deep learning",7,10,2025-01-01
+data analyst,Bangalore,FinTech,"power bi, python, excel",1,18,2024-03-01
+business analyst,Hyderabad,HealthTech,"excel, sql, communication",4,20,2023-03-17
+data scientist,Pune,EdTech,"ml, python, statistics",6,5,2023-03-11
+ai engineer,Delhi,FinTech,"nlp, ml, python",2,17,2024-07-21
+ml engineer,Bangalore,IT,"deep learning, tensorflow, ml",8,3,2023-10-12
+ai engineer,Chennai,FinTech,"ml, nlp, python",5,19,2023-05-28
+data analyst,Delhi,IT,"excel, power bi, python",2,20,2023-01-20
+software engineer,Chennai,EdTech,"python, oops, sql",4,4,2023-05-01
+devops engineer,Chennai,E-Commerce,"linux, aws, docker",5,20,2024-02-10
+ai engineer,Hyderabad,IT,"python, ml, ai",6,10,2024-03-28
+data scientist,Hyderabad,EdTech,"statistics, ml, python",8,16,2024-12-01
+cloud engineer,Chennai,HealthTech,"linux, docker, azure",7,4,2023-11-23
+cyber security analyst,Mumbai,FinTech,"security, networking, linux",3,24,2023-06-04
+ai engineer,Chennai,EdTech,"ai, nlp, python",8,6,2024-04-13
+business analyst,Hyderabad,EdTech,"sql, excel, communication",1,13,2024-03-11
+business analyst,Mumbai,HealthTech,"excel, sql, communication",5,4,2024-02-01
+data analyst,Chennai,IT,"python, power bi, sql",5,3,2024-08-23
+web developer,Mumbai,FinTech,"javascript, react, css",3,10,2024-07-04
+devops engineer,Bangalore,E-Commerce,"kubernetes, docker, linux",4,22,2024-07-01
+ml engineer,Pune,FinTech,"python, deep learning, ml",1,10,2023-12-18
+business analyst,Chennai,HealthTech,"communication, sql, excel",7,13,2024-08-31
+cyber security analyst,Mumbai,IT,"security, linux, networking",0,22,2024-01-30
+software engineer,Hyderabad,IT,"java, oops, sql",3,6,2023-01-15
+business analyst,Mumbai,E-Commerce,"sql, excel, communication",7,23,2023-12-02
+business analyst,Mumbai,IT,"excel, sql, communication",0,3,2023-01-05
+cloud engineer,Mumbai,E-Commerce,"docker, linux, azure",3,12,2024-03-11
+ai engineer,Pune,HealthTech,"ai, python, nlp",7,23,2024-02-18
+ai engineer,Mumbai,FinTech,"python, ai, nlp",4,10,2023-10-07
+cyber security analyst,Hyderabad,IT,"security, linux, networking",6,19,2023-05-09
+ml engineer,Mumbai,IT,"python, tensorflow, deep learning",5,16,2024-05-27
+data analyst,Delhi,IT,"python, excel, power bi",7,17,2023-03-14
+devops engineer,Mumbai,FinTech,"aws, kubernetes, linux",8,12,2023-11-05
+data scientist,Hyderabad,HealthTech,"ml, sql, python",8,16,2023-11-08
+ml engineer,Chennai,E-Commerce,"python, deep learning, ml",7,6,2023-11-10
+software engineer,Mumbai,HealthTech,"python, oops, sql",0,15,2023-08-21
+data scientist,Chennai,FinTech,"statistics, sql, ml",6,18,2023-01-19
+cloud engineer,Pune,FinTech,"linux, aws, azure",0,6,2024-04-14
+business analyst,Delhi,IT,"communication, sql, excel",2,6,2023-06-29
+web developer,Pune,E-Commerce,"html, css, react",2,9,2024-11-27
+cyber security analyst,Mumbai,FinTech,"linux, networking, security",6,3,2024-02-08
+devops engineer,Delhi,HealthTech,"aws, linux, kubernetes",5,5,2023-09-16
+devops engineer,Mumbai,EdTech,"aws, docker, linux",1,15,2023-03-07
+ml engineer,Delhi,FinTech,"tensorflow, python, ml",0,20,2024-03-24
+ml engineer,Hyderabad,IT,"python, ml, tensorflow",6,13,2024-03-26
+ml engineer,Pune,HealthTech,"ml, tensorflow, deep learning",6,6,2023-10-30
+ml engineer,Bangalore,FinTech,"tensorflow, ml, python",8,16,2023-01-31
+business analyst,Hyderabad,FinTech,"sql, communication, excel",5,4,2023-04-01
+ml engineer,Hyderabad,IT,"ml, tensorflow, python",7,3,2024-03-04
+data scientist,Bangalore,FinTech,"sql, statistics, python",1,11,2023-11-14
+data scientist,Mumbai,FinTech,"sql, python, ml",3,20,2023-11-27
+data scientist,Delhi,FinTech,"sql, statistics, ml",5,3,2023-11-11
