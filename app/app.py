@@ -49,13 +49,17 @@ def load_model(filename):
     raise FileNotFoundError(f"Model file not found: {filename}")
 
 try:
+    print("[INFO] Starting model loading...")
     model = load_model("job_demand_model.pkl")
     tfidf = load_model("tfidf.pkl")
     le_loc = load_model("location_encoder.pkl")
     le_ind = load_model("industry_encoder.pkl")
     print("[OK] All models loaded successfully")
 except Exception as e:
-    print(f"[ERROR] Failed to load models: {e}")
+    print(f"[ERROR] CRITICAL: Failed to load models: {str(e)}")
+    # Log more detail if possible
+    import traceback
+    traceback.print_exc()
     raise
 
 
@@ -203,6 +207,11 @@ def home():
         industries=le_ind.classes_,
         insights=market_insights
     )
+
+@app.route("/health")
+def health():
+    """Simple health check for Render to monitor."""
+    return jsonify({"status": "ok", "timestamp": time.time()})
 
 @app.route("/predict", methods=["POST"])
 def predict():
