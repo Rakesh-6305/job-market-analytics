@@ -110,7 +110,8 @@ def generate_plots(role_filter=None, min_salary=None):
     key_insights.append(f"<b>Avg Salary:</b> ₹{avg_sal} LPA is the average compensation offered.")
     
     # 3. Remote percentage
-    remote_jobs = df['job_title'].str.contains('remote', case=False, na=False).sum()
+    remote_jobs = (df['job_title'].str.contains('remote', case=False, na=False) | 
+                   df['location'].str.contains('remote', case=False, na=False)).sum()
     remote_pct = int((remote_jobs / len(df)) * 100)
     key_insights.append(f"<b>Remote Work:</b> Approximately {remote_pct}% of roles mention remote flexibility.")
     

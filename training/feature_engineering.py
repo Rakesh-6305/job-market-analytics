@@ -22,7 +22,13 @@ print(df["demand_label"].value_counts())
 print()
 print(df[["job_title", "demand_score", "demand_label"]].drop_duplicates("job_title").sort_values("demand_score"))
 
-# STEP 4: Save updated dataset
+# STEP 4: Simulate Remote Work (Since original data lacks 'Remote' keywords)
+import numpy as np
+np.random.seed(42) # For consistent simulation
+mask = np.random.rand(len(df)) < 0.35
+df.loc[mask, "job_title"] = df.loc[mask, "job_title"] + " (Remote)"
+
+# STEP 5: Save updated dataset
 df.to_csv("data/jobs_with_demand.csv", index=False)
 
 print("\nFeature engineering completed and file saved!")
