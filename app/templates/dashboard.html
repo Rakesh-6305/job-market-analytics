@@ -1,629 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Market Insights Dashboard — Job Market AI</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --bg-light: #f8fafc;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: url("{{ url_for('static', filename='bg.jpg') }}") no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
-            padding: 30px 20px;
-            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: #1e293b;
         }
 
-        .dashboard-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 30px;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
+        .navbar {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
-        .header {
-            grid-column: 1 / -1;
-            margin-bottom: 20px;
-        }
+        .nav-link { font-weight: 500; color: #64748b; }
+        .nav-link:hover { color: var(--primary); }
+        .nav-link.active { color: var(--primary); }
 
-        .header h2 {
-            color: white;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
-            font-size: 36px;
-            margin-bottom: 10px;
-            animation: slideDown 0.6s ease;
-        }
-
-        .header p {
-            color: rgba(255,255,255,0.9);
-            font-size: 16px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .chart-container {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 16px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            border: 2px solid rgba(39, 174, 96, 0.1);
-            transition: all 0.3s ease;
-            animation: fadeInUp 0.6s ease forwards;
-            min-height: 450px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .chart-container:nth-child(2) {
-            animation-delay: 0.1s;
-        }
-
-        .chart-container:nth-child(3) {
-            animation-delay: 0.2s;
-        }
-
-        .chart-container:nth-child(4) {
-            animation-delay: 0.3s;
-        }
-
-        .chart-container:nth-child(5) {
-            animation-delay: 0.4s;
-        }
-
-        .chart-container:nth-child(6) {
-            animation-delay: 0.5s;
-        }
-
-        .chart-container:nth-child(7) {
-            animation-delay: 0.6s;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .chart-container:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        .chart-title {
-            color: #27ae60;
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            flex-grow: 1;
-        }
-
-        .placeholder-chart {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(46, 204, 113, 0.1));
-            border-radius: 8px;
-            color: #999;
-            font-size: 16px;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Salary Trends Chart */
-        .salary-chart {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-around;
-            gap: 15px;
-            height: 250px;
-            padding: 20px;
-        }
-
-        .salary-bar {
-            width: 100%;
-            background: linear-gradient(180deg, #27ae60, #2ecc71);
-            border-radius: 8px 8px 0 0;
-            position: relative;
-            box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .salary-bar:hover {
-            background: linear-gradient(180deg, #229954, #27ae60);
-            transform: scaleY(1.05);
-        }
-
-        .salary-label {
-            position: static;
-            width: 100%;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-            font-weight: bold;
-        }
-
-        /* Skills Chart */
-        .skills-chart {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding: 20px;
-        }
-
-        .skill-bar-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .skill-name {
-            min-width: 100px;
-            font-size: 13px;
-            font-weight: 600;
-            color: #333;
-            text-align: right;
-        }
-
-        .skill-bar-fill {
-            flex: 1;
-            height: 28px;
-            background: linear-gradient(90deg, #27ae60, #2ecc71);
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(39, 174, 96, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .skill-bar-item:hover .skill-bar-fill {
-            background: linear-gradient(90deg, #229954, #27ae60);
-            box-shadow: 0 4px 8px rgba(39, 174, 96, 0.4);
-        }
-
-        .skill-value {
-            min-width: 40px;
-            text-align: right;
-            font-size: 12px;
-            font-weight: bold;
-            color: #27ae60;
-        }
-
-        /* Experience Distribution */
-        .exp-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .exp-item {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(46, 204, 113, 0.05));
+        .card {
+            border: none;
             border-radius: 12px;
-            border: 2px solid rgba(39, 174, 96, 0.2);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
         }
 
-        .exp-item:hover {
-            background: linear-gradient(135deg, rgba(39, 174, 96, 0.2), rgba(46, 204, 113, 0.1));
-            border-color: #27ae60;
-            transform: translateY(-3px);
+        .card:hover { transform: translateY(-2px); }
+
+        .insight-card {
+            border-left: 4px solid var(--primary);
+            background: white;
         }
 
-        .exp-percentage {
-            font-size: 32px;
-            font-weight: bold;
-            color: #27ae60;
-            margin-bottom: 10px;
-        }
-
-        .exp-label {
-            font-size: 14px;
-            color: #666;
-            font-weight: 600;
-        }
-
-        /* Geographic Distribution */
-        .geo-chart {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            padding: 20px;
-        }
-
-        .geo-item {
-            background: linear-gradient(135deg, #27ae60, #2ecc71);
-            color: white;
-            padding: 20px;
+        .filter-section {
+            background: white;
             border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .geo-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(39, 174, 96, 0.5);
-        }
-
-        .geo-count {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .geo-name {
-            font-size: 14px;
-            font-weight: 600;
-            opacity: 0.9;
-        }
-
-        /* Growth Badge */
-        .growth-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: linear-gradient(135deg, #27ae60, #2ecc71);
-            color: white;
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-            z-index: 10;
-        }
-
-        @keyframes popIn {
-            0% {
-                transform: scale(0) rotate(-45deg);
-                opacity: 0;
-            }
-            50% {
-                transform: scale(1.1) rotate(10deg);
-            }
-            100% {
-                transform: scale(1) rotate(0deg);
-                opacity: 1;
-            }
-        }
-
-        .growth-badge .up-arrow {
-            animation: bounce 2s infinite;
-            font-size: 14px;
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-4px);
-            }
-        }
-
-        .chart-container {
-            position: relative;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        a {
-            display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #27ae60, #2ecc71);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
-        }
-
-        a:hover {
-            background: linear-gradient(135deg, #229954, #27ae60);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.5);
-        }
-
-        a:active {
-            transform: translateY(0);
-        }
-
-        .stats {
-            background: rgba(52, 152, 219, 0.1);
-            border-left: 4px solid #3498db;
-            padding: 15px;
-            border-radius: 8px;
-            color: white;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-            font-size: 14px;
-            grid-column: 1 / -1;
-        }
-
-        /* Summary Stats Cards */
-        .summary-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            grid-column: 1 / -1;
-            margin-bottom: 20px;
-        }
-
-        .summary-stat {
-            background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(46, 204, 113, 0.05));
             padding: 20px;
-            border-radius: 12px;
-            border: 2px solid rgba(39, 174, 96, 0.2);
-            text-align: center;
-            transition: all 0.3s ease;
-            animation: slideInUp 0.6s ease backwards;
-        }
-
-        .summary-stat:nth-child(1) { animation-delay: 0.1s; }
-        .summary-stat:nth-child(2) { animation-delay: 0.2s; }
-        .summary-stat:nth-child(3) { animation-delay: 0.3s; }
-        .summary-stat:nth-child(4) { animation-delay: 0.4s; }
-
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .summary-stat:hover {
-            background: linear-gradient(135deg, rgba(39, 174, 96, 0.2), rgba(46, 204, 113, 0.1));
-            transform: translateY(-5px);
-            border-color: #27ae60;
-            box-shadow: 0 8px 20px rgba(39, 174, 96, 0.2);
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
         .stat-icon {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .stat-number {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 24px;
-            font-weight: bold;
-            color: #27ae60;
-            margin: 10px 0;
+            margin-bottom: 12px;
         }
 
-        .stat-label {
-            font-size: 13px;
-            color: #666;
-            font-weight: 600;
+        .bg-indigo-light { background-color: rgba(99, 102, 241, 0.1); color: var(--primary); }
+        .bg-emerald-light { background-color: rgba(16, 185, 129, 0.1); color: var(--success); }
+        .bg-amber-light { background-color: rgba(245, 158, 11, 0.1); color: var(--warning); }
+
+        .chart-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
-        .button-group {
-            grid-column: 1 / -1;
+        .badge-insights {
+            display: block;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background: rgba(99, 102, 241, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            color: #1e293b;
+            font-size: 14px;
         }
-    </style>
-    <style>
-        /* ... existing styles ... */
-        /* Animation styles removed */
+
+        .sidebar {
+            position: sticky;
+            top: 20px;
+        }
     </style>
 </head>
 <body>
 
-<div class="dashboard-container">
-    <div class="header">
-        <h2>📊 Job Market Dashboard</h2>
-        <p>Comprehensive analysis of job market trends and insights</p>
-    </div>
-    <!-- ... existing dashboard content ... -->
-    <div class="summary-stats">
-        <div class="summary-stat">
-            <div class="stat-icon">📈</div>
-            <div class="stat-number">1,250+</div>
-            <div class="stat-label">Active Jobs</div>
-        </div>
-        <div class="summary-stat">
-            <div class="stat-icon">💼</div>
-            <div class="stat-number">8,500+</div>
-            <div class="stat-label">Companies</div>
-        </div>
-        <div class="summary-stat">
-            <div class="stat-icon">🌐</div>
-            <div class="stat-number">{{ remote_pct }}%</div>
-            <div class="stat-label">Remote %</div>
-        </div>
-        <div class="summary-stat">
-            <div class="stat-icon">📊</div>
-            <div class="stat-number">42</div>
-            <div class="stat-label">Top Skills</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="/">📊 Job Market AI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/dashboard">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="/trade">Trader</a></li>
+            </ul>
         </div>
     </div>
+</nav>
 
-    <div class="chart-container">
-        <div class="growth-badge"><span class="up-arrow">↑</span> 18%</div>
-        <div class="chart-title">📈 Job Demand by Level</div>
-        <img src="{{ url_for('static', filename='plots/demand_label.png') }}" alt="Job Demand by Level">
-    </div>
-
-    <div class="chart-container">
-        <div class="growth-badge"><span class="up-arrow">↑</span> 12%</div>
-        <div class="chart-title">📍 Jobs by Location</div>
-        <img src="{{ url_for('static', filename='plots/location_jobs.png') }}" alt="Jobs by Location">
-    </div>
-
-    <div class="chart-container">
-        <div class="growth-badge"><span class="up-arrow">↑</span> 22%</div>
-        <div class="chart-title">🏢 Jobs by Industry</div>
-        <img src="{{ url_for('static', filename='plots/industry_jobs.png') }}" alt="Jobs by Industry">
-    </div>
-
-    <div class="chart-container">
-        <div class="growth-badge"><span class="up-arrow">↑</span> 15%</div>
-        <div class="chart-title">💰 Salary Trends</div>
-        <div class="salary-chart">
-            <div style="display: flex; flex-direction: column; align-items: center; flex: 1; gap: 30px;">
-                <div class="salary-bar" style="height: 60px;"></div>
-                <div class="salary-label">Entry<br>$40K</div>
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center; flex: 1; gap: 30px;">
-                <div class="salary-bar" style="height: 100px;"></div>
-                <div class="salary-label">Junior<br>$60K</div>
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center; flex: 1; gap: 30px;">
-                <div class="salary-bar" style="height: 130px;"></div>
-                <div class="salary-label">Mid<br>$80K</div>
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center; flex: 1; gap: 30px;">
-                <div class="salary-bar" style="height: 170px;"></div>
-                <div class="salary-label">Senior<br>$120K</div>
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center; flex: 1; gap: 30px;">
-                <div class="salary-bar" style="height: 200px;"></div>
-                <div class="salary-label">Lead<br>$150K</div>
-            </div>
+<div class="container py-4">
+    
+    <!-- Title & Header -->
+    <div class="row mb-4 align-items-center">
+        <div class="col-md-8">
+            <h1 class="fw-extrabold mb-1">Market Analytics Dashboard</h1>
+            <p class="text-secondary">Real-time job market trends and data-driven insights.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <span class="badge bg-primary px-3 py-2">Updated Daily</span>
         </div>
     </div>
 
-    <div class="chart-container">
-        <div class="growth-badge"><span class="up-arrow">↑</span> 25%</div>
-        <div class="chart-title">🎯 Top Skills Demand</div>
-        <div class="skills-chart">
-            <div class="skill-bar-item">
-                <div class="skill-name">Python</div>
-                <div class="skill-bar-fill" style="width: 92%;"></div>
-                <div class="skill-value">92%</div>
+    <!-- Filters -->
+    <div class="filter-section">
+        <form action="/dashboard" method="GET" class="row g-3 align-items-end">
+            <div class="col-md-5">
+                <label class="form-label fw-semibold">Filter by Job Role</label>
+                <select name="role" class="form-select">
+                    <option value="All">All Roles</option>
+                    {% for role in summary.roles %}
+                    <option value="{{ role }}" {% if current_role == role %}selected{% endif %}>{{ role }}</option>
+                    {% endfor %}
+                </select>
             </div>
-            <div class="skill-bar-item">
-                <div class="skill-name">SQL</div>
-                <div class="skill-bar-fill" style="width: 85%;"></div>
-                <div class="skill-value">85%</div>
+            <div class="col-md-4">
+                <label class="form-label fw-semibold">Min Salary (LPA)</label>
+                <input type="number" name="min_salary" class="form-control" placeholder="e.g. 5" value="{{ current_salary }}">
             </div>
-            <div class="skill-bar-item">
-                <div class="skill-name">Cloud</div>
-                <div class="skill-bar-fill" style="width: 78%;"></div>
-                <div class="skill-value">78%</div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary w-100 py-2">
+                    <i class="bi bi-filter me-2"></i>Apply Filters
+                </button>
             </div>
-            <div class="skill-bar-item">
-                <div class="skill-name">AI/ML</div>
-                <div class="skill-bar-fill" style="width: 72%;"></div>
-                <div class="skill-value">72%</div>
+        </form>
+    </div>
+
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col-lg-8">
+            
+            <!-- Quick Stats -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <div class="stat-icon bg-indigo-light"><i class="bi bi-briefcase"></i></div>
+                        <h6 class="text-secondary mb-1">Total Jobs</h6>
+                        <h3 class="fw-bold mb-0">{{ summary.total_jobs }}</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <div class="stat-icon bg-emerald-light"><i class="bi bi-cash-stack"></i></div>
+                        <h6 class="text-secondary mb-1">Avg Salary</h6>
+                        <h3 class="fw-bold mb-0">₹{{ summary.avg_salary }} LPA</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <div class="stat-icon bg-amber-light"><i class="bi bi-laptop"></i></div>
+                        <h6 class="text-secondary mb-1">Remote Score</h6>
+                        <h3 class="fw-bold mb-0">{{ summary.remote_pct }}%</h3>
+                    </div>
+                </div>
             </div>
-            <div class="skill-bar-item">
-                <div class="skill-name">DevOps</div>
-                <div class="skill-bar-fill" style="width: 65%;"></div>
-                <div class="skill-value">65%</div>
+
+            <!-- Plots Grid -->
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card p-3 h-100">
+                        <h5 class="fw-bold mb-3">Demand Distribution</h5>
+                        <img src="{{ url_for('static', filename='plots/demand_label.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Demand Chart">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 h-100">
+                        <h5 class="fw-bold mb-3">Salary Distribution</h5>
+                        <img src="{{ url_for('static', filename='plots/salary_dist.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Salary Chart">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card p-3">
+                        <h5 class="fw-bold mb-3">Top In-Demand Skills</h5>
+                        <img src="{{ url_for('static', filename='plots/skills.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Skills Chart">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 h-100">
+                        <h5 class="fw-bold mb-3">Top Job Roles</h5>
+                        <img src="{{ url_for('static', filename='plots/job_roles.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Job Roles Chart">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 h-100">
+                        <h5 class="fw-bold mb-3">Top Locations</h5>
+                        <img src="{{ url_for('static', filename='plots/location_jobs.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Location Chart">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="chart-container">
-        <div class="growth-badge"><span class="up-arrow">↑</span> 8%</div>
-        <div class="chart-title">📈 Experience Level Distribution</div>
-        <div class="exp-grid">
-            <div class="exp-item">
-                <div class="exp-percentage">25%</div>
-                <div class="exp-label">Entry Level</div>
-            </div>
-            <div class="exp-item">
-                <div class="exp-percentage">30%</div>
-                <div class="exp-label">Junior</div>
-            </div>
-            <div class="exp-item">
-                <div class="exp-percentage">25%</div>
-                <div class="exp-label">Mid-Level</div>
-            </div>
-            <div class="exp-item">
-                <div class="exp-percentage">15%</div>
-                <div class="exp-label">Senior</div>
+        <!-- Sidebar (Insights) -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="sidebar">
+                <div class="card p-4 insight-card mb-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-lightbulb text-warning me-2"></i>Key AI Insights</h4>
+                    <p class="text-secondary small mb-4">Our model analyzed current trends to highlight these critical findings:</p>
+                    
+                    {% for insight in summary.key_insights %}
+                    <div class="badge-insights">
+                        {{ insight | safe }}
+                    </div>
+                    {% endfor %}
+                    
+                    <hr>
+                    <div class="d-grid mt-3">
+                        <a href="/" class="btn btn-outline-primary">Analyze Your Potential</a>
+                    </div>
+                </div>
+
+                <div class="card p-4 bg-dark text-white border-0">
+                    <h5 class="fw-bold mb-3">Market Tip</h5>
+                    <p class="small text-light opacity-75">
+                        Focusing on <b>Python</b> and <b>Data Engineering</b> currently offers the best ROI for experienced developers in the IT sector.
+                    </p>
+                    <div class="mt-2">
+                        <span class="badge bg-primary me-2">AI Tip</span>
+                        <span class="badge bg-success">Trending</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="chart-container">
-        <div class="growth-badge"><span class="up-arrow">↑</span> 20%</div>
-        <div class="chart-title">🌍 Geographic Distribution</div>
-        <div class="geo-chart">
-            <div class="geo-item">
-                <div class="geo-count">45%</div>
-                <div class="geo-name">🇺🇸 USA</div>
-            </div>
-            <div class="geo-item">
-                <div class="geo-count">25%</div>
-                <div class="geo-name">🇮🇳 India</div>
-            </div>
-            <div class="geo-item">
-                <div class="geo-count">20%</div>
-                <div class="geo-name">🇪🇺 Europe</div>
-            </div>
-            <div class="geo-item">
-                <div class="geo-count">5%</div>
-                <div class="geo-name">🌏 Others</div>
-            </div>
-            <div class="geo-item">
-                <div class="geo-count">3%</div>
-                <div class="geo-name">🇦🇺 Asia Pac</div>
-            </div>
-            <div class="geo-item">
-                <div class="geo-count">2%</div>
-                <div class="geo-name">🌎 Americas</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="stats">
-        📊 <strong>Dashboard Stats:</strong> Powered by real-time job market data analysis
-    </div>
-
-    <div class="button-group">
-        <a href="/">🔁 New Analysis</a>
-        <a href="/dashboard">🔄 Refresh</a>
     </div>
 </div>
+
+<footer class="py-5 mt-5 bg-white border-top">
+    <div class="container text-center">
+        <p class="text-secondary small mb-0">&copy; 2024 Job Market Analytics AI. Built with Scikit-learn & Flask.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -1,88 +1,366 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Market Analytics</title>
+    <title>Job Market Analytics — AI-Powered Career Insights</title>
+    <meta name="description" content="Analyze job demand, discover top skills, and get AI-powered career predictions for the Indian job market.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary: #10b981;
+            --primary-dark: #059669;
+            --primary-glow: rgba(16, 185, 129, 0.3);
+            --accent: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --bg-dark: #0f172a;
+            --bg-card: rgba(255, 255, 255, 0.95);
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-light: #f1f5f9;
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.12);
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
 
+        [data-theme="dark"] {
+            --bg-card: rgba(30, 41, 59, 0.95);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', -apple-system, sans-serif;
             background: url("{{ url_for('static', filename='bg.jpg') }}") no-repeat center center fixed;
             background-size: cover;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        /* Dark overlay for readability */
+        .bg-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.75));
+            backdrop-filter: blur(4px);
+            z-index: 0;
+        }
+
+        .page-wrapper {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
 
-        .container {
-            width: 100%;
+        /* === NAV BAR === */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            margin-bottom: 20px;
         }
 
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 800;
+            font-size: 22px;
+            text-decoration: none;
         }
 
-        .header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-            animation: slideDown 0.6s ease;
+        .nav-brand span { color: var(--primary); }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
-        .header p {
-            font-size: 18px;
-            opacity: 0.95;
+        .nav-link {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s;
         }
 
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .nav-link:hover {
+            color: white;
+            background: var(--glass);
         }
 
-        .card {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 40px;
-            background: rgba(255,255,255,0.95);
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            border: 2px solid rgba(39, 174, 96, 0.2);
+        /* Dark mode toggle */
+        .theme-toggle {
+            width: 44px;
+            height: 24px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .theme-toggle::after {
+            content: '☀️';
+            position: absolute;
+            top: 2px; left: 2px;
+            width: 20px; height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        [data-theme="dark"] .theme-toggle::after {
+            content: '🌙';
+            left: 22px;
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            text-align: center;
+            padding: 40px 0 30px;
             animation: fadeIn 0.8s ease;
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 6px 16px;
+            border-radius: 20px;
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
         }
 
-        .card h2 {
-            color: #27ae60;
-            margin-bottom: 30px;
+        .hero-badge .pulse-dot {
+            width: 6px; height: 6px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 900;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--primary), #34d399, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            color: rgba(255,255,255,0.7);
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px var(--primary-glow);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px var(--primary-glow);
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 4px 20px var(--primary-glow); }
+            to { box-shadow: 0 4px 30px rgba(16, 185, 129, 0.5); }
+        }
+
+        /* === KEY INSIGHTS === */
+        .insights-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
             text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .section-title span { color: var(--primary); }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .insight-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s;
+            animation: slideUp 0.6s ease backwards;
+            backdrop-filter: blur(10px);
+        }
+
+        .insight-card:nth-child(1) { animation-delay: 0.1s; }
+        .insight-card:nth-child(2) { animation-delay: 0.15s; }
+        .insight-card:nth-child(3) { animation-delay: 0.2s; }
+        .insight-card:nth-child(4) { animation-delay: 0.25s; }
+
+        .insight-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+            border-color: var(--primary);
+        }
+
+        .insight-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .insight-value {
             font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .insight-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* === TOP SKILLS TICKER === */
+        .skills-ticker {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.6s ease backwards;
+            animation-delay: 0.3s;
+        }
+
+        .skills-ticker h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .skill-bars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+
+        .skill-bar-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .skill-bar-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .skill-bar-header .name { color: var(--text-primary); text-transform: capitalize; }
+        .skill-bar-header .pct { color: var(--primary); }
+
+        .skill-bar-track {
+            height: 8px;
+            background: rgba(0,0,0,0.06);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        [data-theme="dark"] .skill-bar-track { background: rgba(255,255,255,0.1); }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, var(--primary), #34d399);
+            transition: width 1.5s ease;
+            width: 0%;
+        }
+
+        /* === MAIN LAYOUT === */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        /* === FORM CARD === */
+        .form-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 36px;
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.6s ease backwards;
+            animation-delay: 0.35s;
+        }
+
+        .form-card h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .form-group {
@@ -90,223 +368,408 @@
         }
 
         .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-            font-weight: 600;
-            font-size: 14px;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 12px 15px;
-            margin: 0;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 14px;
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-
-        input:focus, select:focus {
-            outline: none;
-            border-color: #27ae60;
-            box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
-            background-color: #f9fff9;
-        }
-
-        input::placeholder {
-            color: #999;
-        }
-
-        button {
-            width: 100%;
-            padding: 14px;
-            margin-top: 10px;
-            background: linear-gradient(135deg, #27ae60, #2ecc71);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
-        }
-
-        button:hover {
-            background: linear-gradient(135deg, #229954, #27ae60);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.5);
-        }
-
-        button:active {
-            transform: translateY(0);
-        }
-
-        .info-box {
-            background: rgba(52, 152, 219, 0.1);
-            border-left: 4px solid #3498db;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            color: #2c3e50;
-            font-size: 13px;
-            line-height: 1.6;
-        }
-
-        /* Feature Cards */
-        .features {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
-
-        .feature-item {
-            background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(46, 204, 113, 0.05));
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            border: 1px solid rgba(39, 174, 96, 0.2);
-            transition: all 0.3s ease;
-            animation: fadeInUp 0.6s ease backwards;
-        }
-
-        .feature-item:nth-child(1) { animation-delay: 0.1s; }
-        .feature-item:nth-child(2) { animation-delay: 0.2s; }
-        .feature-item:nth-child(3) { animation-delay: 0.3s; }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .feature-item:hover {
-            background: linear-gradient(135deg, rgba(39, 174, 96, 0.2), rgba(46, 204, 113, 0.1));
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(39, 174, 96, 0.2);
-        }
-
-        .feature-icon {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .feature-title {
-            font-size: 14px;
-            font-weight: 600;
-            color: #27ae60;
-        }
-
-        .form-group label {
             display: flex;
             align-items: center;
             gap: 8px;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 14px;
         }
 
-        .icon-circle {
-            width: 24px;
-            height: 24px;
-            background: linear-gradient(135deg, #27ae60, #2ecc71);
+        .step-num {
+            width: 22px; height: 22px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 12px;
-            font-weight: bold;
+            font-size: 11px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid rgba(0,0,0,0.08);
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: all 0.3s;
+            background: white;
+            color: #1e293b;
+        }
+
+        [data-theme="dark"] input,
+        [data-theme="dark"] select {
+            background: rgba(255,255,255,0.05);
+            border-color: var(--glass-border);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] select option {
+            background: #1e293b;
+            color: #f1f5f9;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+        }
+
+        input::placeholder { color: #9ca3af; }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px var(--primary-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 8px;
+            font-family: inherit;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--primary-glow);
+        }
+
+        .submit-btn:active { transform: translateY(0); }
+
+        /* === SIDEBAR === */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .side-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.6s ease backwards;
+        }
+
+        .side-card:nth-child(1) { animation-delay: 0.4s; }
+        .side-card:nth-child(2) { animation-delay: 0.45s; }
+        .side-card:nth-child(3) { animation-delay: 0.5s; }
+
+        .side-card h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .location-list, .role-list {
+            list-style: none;
+        }
+
+        .location-list li, .role-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            font-size: 13px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+
+        [data-theme="dark"] .location-list li,
+        [data-theme="dark"] .role-list li {
+            border-bottom-color: rgba(255,255,255,0.04);
+        }
+
+        .location-list li:last-child, .role-list li:last-child { border-bottom: none; }
+
+        .location-list .count, .role-list .count {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 14px;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.05));
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .tip-box strong { color: var(--accent); }
+
+        /* === FOOTER === */
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* === ANIMATIONS === */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 900px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar { display: none; }
+            .nav-links .nav-link { display: none; }
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 28px; }
+            .hero p { font-size: 15px; }
+            .insights-grid { grid-template-columns: repeat(2, 1fr); }
+            .skill-bars { grid-template-columns: 1fr 1fr; }
+            .form-card { padding: 24px; }
+            .page-wrapper { padding: 12px; }
         }
     </style>
 </head>
 
-
 <body>
 
+<!-- Dark overlay for readability -->
+<div class="bg-overlay"></div>
+
 <!-- 3D Background Animation -->
-<div id="canvas-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;">
+<div id="canvas-container" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;">
     <canvas id="bg-canvas"></canvas>
 </div>
 
-<div class="container">
-    <div class="header">
-        <h1>📊 Job Market Analytics</h1>
-        <p>Analyze job demand and discover your career opportunities</p>
-    </div>
-
-    <div class="card">
-        <h2>🎯 Analyze Your Skills</h2>
-
-        <form action="/predict" method="post">
-            <div class="form-group">
-                <label for="skills"><span class="icon-circle">1</span> 💻 Your Skills</label>
-                <input type="text" id="skills" name="skills" placeholder="e.g., python, machine learning, sql" required>
-            </div>
-
-            <div class="form-group">
-                <label for="location"><span class="icon-circle">2</span> 📍 Preferred Location</label>
-                <select id="location" name="location" required>
-                    <option value="">Select a location</option>
-                    {% for l in locations %}
-                    <option value="{{l}}">{{l}}</option>
-                    {% endfor %}
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="industry"><span class="icon-circle">3</span> 🏢 Industry</label>
-                <select id="industry" name="industry" required>
-                    <option value="">Select an industry</option>
-                    {% for i in industries %}
-                    <option value="{{i}}">{{i}}</option>
-                    {% endfor %}
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="experience"><span class="icon-circle">4</span> ⏱️ Years of Experience</label>
-                <input type="number" id="experience" name="experience" min="0" max="20" placeholder="0-20 years" required>
-            </div>
-
-            <div class="form-group">
-                <label for="salary"><span class="icon-circle">5</span> 💰 Expected Salary (LPA)</label>
-                <input type="number" id="salary" name="salary" min="2" max="50" placeholder="2-50 LPA" required>
-            </div>
-
-            <button type="submit">🚀 Predict Job Demand</button>
-        </form>
-
-        <div class="info-box">
-            ℹ️ <strong>Tip:</strong> Fill in all fields accurately to get the best job market insights and recommendations.
+<div class="page-wrapper">
+    <!-- NAV -->
+    <nav class="navbar">
+        <a href="/" class="nav-brand">📊 Job<span>Market</span>AI</a>
+        <div class="nav-links">
+            <a href="/dashboard" class="nav-link">📈 Dashboard</a>
+            <a href="/trade" class="nav-link">💱 Trade</a>
+            <div class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark mode"></div>
         </div>
+    </nav>
 
-        <div class="features">
-            <div class="feature-item">
-                <div class="feature-icon">📊</div>
-                <div class="feature-title">Data Analytics</div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-badge">
+            <div class="pulse-dot"></div>
+            LIVE MARKET DATA — {{ insights.total_jobs }}+ JOBS ANALYZED
+        </div>
+        <h1>Discover Your <span class="gradient-text">Career Potential</span></h1>
+        <p>AI-powered job market analysis. Get demand predictions, salary insights, and personalized skill recommendations.</p>
+        <a href="#analyze-form" class="hero-cta" id="analyzeCta">🚀 Analyze Now</a>
+    </section>
+
+    <!-- KEY INSIGHTS -->
+    <section class="insights-section">
+        <h2 class="section-title">📊 Key <span>Market Insights</span></h2>
+        <div class="insights-grid">
+            <div class="insight-card">
+                <div class="insight-icon">🔥</div>
+                <div class="insight-value">{{ insights.total_jobs }}+</div>
+                <div class="insight-label">Jobs Analyzed</div>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">🎯</div>
-                <div class="feature-title">Accurate Predictions</div>
+            <div class="insight-card">
+                <div class="insight-icon">💰</div>
+                <div class="insight-value">₹{{ insights.avg_salary }} LPA</div>
+                <div class="insight-label">Average Salary</div>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">📈</div>
-                <div class="feature-title">Market Trends</div>
+            <div class="insight-card">
+                <div class="insight-icon">📍</div>
+                <div class="insight-value">{{ insights.top_locations | length }}</div>
+                <div class="insight-label">Top Locations</div>
+            </div>
+            <div class="insight-card">
+                <div class="insight-icon">🏢</div>
+                <div class="insight-value">{{ insights.top_industries | length }}</div>
+                <div class="insight-label">Industries Covered</div>
             </div>
         </div>
+    </section>
+
+    <!-- TOP SKILLS TICKER -->
+    <section class="skills-ticker">
+        <h3>🔥 Top Skills in Market</h3>
+        <div class="skill-bars" id="skillBars">
+            {% for skill, count in insights.top_skills.items() %}
+            <div class="skill-bar-wrap">
+                <div class="skill-bar-header">
+                    <span class="name">{{ skill }}</span>
+                    <span class="pct">{{ count }}</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="{{ (count / (insights.top_skills.values() | list | first) * 100) | int }}"></div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-layout" id="analyze-form">
+        <!-- FORM -->
+        <div class="form-card">
+            <h2>🎯 Analyze Your Skills</h2>
+
+            <form action="/predict" method="post" id="predictForm">
+                <div class="form-group">
+                    <label for="skills"><span class="step-num">1</span> 💻 Your Skills</label>
+                    <input type="text" id="skills" name="skills" placeholder="e.g., python, machine learning, sql" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location"><span class="step-num">2</span> 📍 Preferred Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select a location</option>
+                        {% for l in locations %}
+                        <option value="{{l}}">{{l}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="industry"><span class="step-num">3</span> 🏢 Industry</label>
+                    <select id="industry" name="industry" required>
+                        <option value="">Select an industry</option>
+                        {% for i in industries %}
+                        <option value="{{i}}">{{i}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience"><span class="step-num">4</span> ⏱️ Years of Experience</label>
+                    <input type="number" id="experience" name="experience" min="0" max="20" placeholder="0-20 years" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="salary"><span class="step-num">5</span> 💰 Expected Salary (LPA)</label>
+                    <input type="number" id="salary" name="salary" min="2" max="50" placeholder="2-50 LPA" required>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    🚀 Analyze Now — Get AI Prediction
+                </button>
+            </form>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="side-card">
+                <h3>📍 Top Hiring Locations</h3>
+                <ul class="location-list">
+                    {% for loc, count in insights.top_locations.items() %}
+                    <li><span>{{ loc }}</span><span class="count">{{ count }}</span></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="side-card">
+                <h3>💼 Trending Roles</h3>
+                <ul class="role-list">
+                    {% for role, count in insights.top_roles.items() %}
+                    <li><span>{{ role }}</span><span class="count">{{ count }}</span></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="side-card">
+                <h3>💡 Quick Tip</h3>
+                <div class="tip-box">
+                    <strong>Pro Tip:</strong> Enter multiple skills separated by commas for the most accurate prediction. Skills like <strong>Python + SQL + ML</strong> have the highest demand!
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Built with ❤️ using Python, Flask & ML | <a href="/dashboard">View Dashboard</a></p>
+    </footer>
 </div>
 
 <!-- Three.js Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="{{ url_for('static', filename='animation.js') }}"></script>
 
-</body>
+<script>
+// Dark mode toggle
+function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+}
 
+// Persist theme
+(function() {
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+})();
+
+// Animate skill bars on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const fills = entry.target.querySelectorAll('.skill-bar-fill');
+            fills.forEach(bar => {
+                const w = bar.getAttribute('data-width');
+                setTimeout(() => { bar.style.width = w + '%'; }, 200);
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.3 });
+
+const skillSection = document.getElementById('skillBars');
+if (skillSection) observer.observe(skillSection);
+
+// Smooth scroll for CTA
+document.getElementById('analyzeCta').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('analyze-form').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+
+</body>
 </html>

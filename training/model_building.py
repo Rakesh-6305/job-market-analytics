@@ -13,7 +13,12 @@ from sklearn.metrics import accuracy_score, classification_report
 df = pd.read_csv("data/jobs_with_demand.csv")
 print("Dataset loaded:", df.shape)
 
-# STEP 2: Feature Engineering
+# STEP 2: Check class balance
+print("\n--- Class Distribution ---")
+print(df["demand_label"].value_counts())
+print()
+
+# STEP 3: Feature Engineering
 df["skills"] = df["skills"].str.lower()
 
 # TF-IDF for skills
@@ -36,29 +41,33 @@ X = np.hstack((
 # Target variable
 y = df["demand_label"]
 
-# STEP 3: Train-Test Split
+# STEP 4: Train-Test Split
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
+    X, y, test_size=0.2, random_state=42, stratify=y
 )
 
 print("Train shape:", X_train.shape)
 print("Test shape:", X_test.shape)
 
-# STEP 4: Model Building
+# STEP 5: Model Building (class_weight='balanced' for extra protection)
 model = RandomForestClassifier(
     n_estimators=200,
+    class_weight='balanced',
     random_state=42
 )
 
 model.fit(X_train, y_train)
 
-# STEP 5: Evaluation
+# STEP 6: Evaluation
 y_pred = model.predict(X_test)
 
-print("Accuracy:", accuracy_score(y_test, y_pred))
+print("\nAccuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
-# STEP 6: Save model & encoders
+# Print model classes
+print("Model classes:", model.classes_)
+
+# STEP 7: Save model & encoders
 os.makedirs("models", exist_ok=True)
 
 joblib.dump(model, "models/job_demand_model.pkl")
@@ -66,4 +75,4 @@ joblib.dump(tfidf, "models/tfidf.pkl")
 joblib.dump(le_location, "models/location_encoder.pkl")
 joblib.dump(le_industry, "models/industry_encoder.pkl")
 
-print("Model and encoders saved successfully!")
+print("\nModel and encoders saved successfully!")

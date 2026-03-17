@@ -9,20 +9,20 @@ print("Shape:", df.shape)
 # STEP 2: Create Demand Score
 df["demand_score"] = df.groupby("job_title")["job_title"].transform("count")
 
-# STEP 3: Create Demand Label
-def label_demand(x):
-    if x > 110:
-        return "High"
-    elif x > 100:
-        return "Medium"
-    else:
-        return "Low"
+# STEP 3: Create Demand Label using percentile-based thresholds
+# This ensures a balanced distribution across High/Medium/Low
+df["demand_label"] = pd.qcut(
+    df["demand_score"],
+    q=3,
+    labels=["Low", "Medium", "High"]
+)
 
-df["demand_label"] = df["demand_score"].apply(label_demand)
-
-print(df[["job_title", "demand_score", "demand_label"]].head())
+print("\n--- Demand Label Distribution ---")
+print(df["demand_label"].value_counts())
+print()
+print(df[["job_title", "demand_score", "demand_label"]].drop_duplicates("job_title").sort_values("demand_score"))
 
 # STEP 4: Save updated dataset
 df.to_csv("data/jobs_with_demand.csv", index=False)
 
-print("Feature engineering completed and file saved!")
+print("\nFeature engineering completed and file saved!")
