@@ -12,6 +12,9 @@ PLOT_DIR = os.path.join(os.path.dirname(__file__), 'static', 'plots')
 os.makedirs(PLOT_DIR, exist_ok=True)
 
 
+import io
+import base64
+
 def generate_plots(role_filter=None, min_salary=None):
     df = pd.read_csv(DATA_PATH)
 
@@ -26,15 +29,24 @@ def generate_plots(role_filter=None, min_salary=None):
             pass
 
     if df.empty:
-        return {'total_jobs': 0, 'remote_pct': 0, 'key_insights': []}
+        return {'total_jobs': 0, 'remote_pct': 0, 'key_insights': [], 'plots': {}}
+
+    plots = {}
+
+    def get_base64_plot():
+        buf = io.BytesIO()
+        plt.savefig(buf, format='png', bbox_inches='tight')
+        buf.seek(0)
+        img_base64 = base64.b64encode(buf.read()).decode('utf-8')
+        plt.close()
+        return img_base64
 
     # Demand Level Distribution
     plt.figure(figsize=(6, 6))
     df["demand_label"].value_counts().plot(kind="pie", autopct="%1.1f%%", startangle=140, colors=['#10b981', '#f59e0b', '#ef4444'])
     plt.title("Demand Level Distribution")
     plt.ylabel("")
-    plt.savefig(os.path.join(PLOT_DIR, "demand_label.png"))
-    plt.close()
+    plots['demand_label'] = get_base64_plot()
 
     # Jobs by Location
     plt.figure(figsize=(10, 6))
@@ -44,8 +56,7 @@ def generate_plots(role_filter=None, min_salary=None):
     plt.ylabel("Count")
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(os.path.join(PLOT_DIR, "location_jobs.png"))
-    plt.close()
+    plots['location_jobs'] = get_base64_plot()
 
     # Jobs by Industry
     plt.figure(figsize=(10, 6))
@@ -55,8 +66,7 @@ def generate_plots(role_filter=None, min_salary=None):
     plt.ylabel("Count")
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(os.path.join(PLOT_DIR, "industry_jobs.png"))
-    plt.close()
+    plots['industry_jobs'] = get_base64_plot()
 
     # Top Job Roles
     plt.figure(figsize=(10, 6))
@@ -65,8 +75,7 @@ def generate_plots(role_filter=None, min_salary=None):
     plt.xlabel("Count")
     plt.ylabel("Job Role")
     plt.tight_layout()
-    plt.savefig(os.path.join(PLOT_DIR, "job_roles.png"))
-    plt.close()
+    plots['job_roles'] = get_base64_plot()
 
     # Top Skills
     skills_series = df["skills"].str.split(",").explode().str.strip().str.lower()
@@ -77,8 +86,7 @@ def generate_plots(role_filter=None, min_salary=None):
     plt.ylabel("Frequency")
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(os.path.join(PLOT_DIR, "skills.png"))
-    plt.close()
+    plots['skills'] = get_base64_plot()
 
     # Salary Distribution
     plt.figure(figsize=(10, 6))
@@ -88,8 +96,7 @@ def generate_plots(role_filter=None, min_salary=None):
     plt.ylabel("Number of Jobs")
     plt.grid(axis='y', alpha=0.3)
     plt.tight_layout()
-    plt.savefig(os.path.join(PLOT_DIR, "salary_dist.png"))
-    plt.close()
+    plots['salary_dist'] = get_base64_plot()
 
     # Key Insights
     key_insights = []
@@ -122,7 +129,8 @@ def generate_plots(role_filter=None, min_salary=None):
         'avg_salary': avg_sal,
         'key_insights': key_insights,
         'roles': sorted(df['job_title'].unique().tolist()),
-        'top_skills': skills_series.value_counts().head(5).to_dict()
+        'top_skills': skills_series.value_counts().head(5).to_dict(),
+        'plots': plots
     }
 
     return summary

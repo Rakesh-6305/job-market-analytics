@@ -211,31 +211,51 @@
                 <div class="col-md-6">
                     <div class="card p-3 h-100">
                         <h5 class="fw-bold mb-3">Demand Distribution</h5>
-                        <img src="{{ url_for('static', filename='plots/demand_label.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Demand Chart">
+                        {% if summary.plots.demand_label %}
+                        <img src="data:image/png;base64,{{ summary.plots.demand_label }}" class="chart-img" alt="Demand Chart">
+                        {% else %}
+                        <p class="text-secondary small">Chart unavailable</p>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card p-3 h-100">
                         <h5 class="fw-bold mb-3">Salary Distribution</h5>
-                        <img src="{{ url_for('static', filename='plots/salary_dist.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Salary Chart">
+                        {% if summary.plots.salary_dist %}
+                        <img src="data:image/png;base64,{{ summary.plots.salary_dist }}" class="chart-img" alt="Salary Chart">
+                        {% else %}
+                        <p class="text-secondary small">Chart unavailable</p>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card p-3">
                         <h5 class="fw-bold mb-3">Top In-Demand Skills</h5>
-                        <img src="{{ url_for('static', filename='plots/skills.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Skills Chart">
+                        {% if summary.plots.skills %}
+                        <img src="data:image/png;base64,{{ summary.plots.skills }}" class="chart-img" alt="Skills Chart">
+                        {% else %}
+                        <p class="text-secondary small">Chart unavailable</p>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card p-3 h-100">
                         <h5 class="fw-bold mb-3">Top Job Roles</h5>
-                        <img src="{{ url_for('static', filename='plots/job_roles.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Job Roles Chart">
+                        {% if summary.plots.job_roles %}
+                        <img src="data:image/png;base64,{{ summary.plots.job_roles }}" class="chart-img" alt="Job Roles Chart">
+                        {% else %}
+                        <p class="text-secondary small">Chart unavailable</p>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card p-3 h-100">
                         <h5 class="fw-bold mb-3">Top Locations</h5>
-                        <img src="{{ url_for('static', filename='plots/location_jobs.png') }}?v={{ range(1, 1000) | random }}" class="chart-img" alt="Location Chart">
+                        {% if summary.plots.location_jobs %}
+                        <img src="data:image/png;base64,{{ summary.plots.location_jobs }}" class="chart-img" alt="Location Chart">
+                        {% else %}
+                        <p class="text-secondary small">Chart unavailable</p>
+                        {% endif %}
                     </div>
                 </div>
             </div>

@@ -1,1 +1,1 @@
-from .app import app
+# This file makes 'app' a package.
