@@ -7,11 +7,13 @@ import os
 import csv
 from app.dashboard_plots import generate_plots
 
-app = Flask(__name__, template_folder='app/templates', static_folder='app/static')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+app = Flask(__name__, 
+            template_folder=os.path.join(BASE_DIR, 'app', 'templates'), 
+            static_folder=os.path.join(BASE_DIR, 'app', 'static'))
 app.secret_key = 'job-market-analytics-2024'
 
 # Load models with robust path resolution
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, 'models')
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 
