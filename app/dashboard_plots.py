@@ -6,7 +6,7 @@ import os
 from collections import Counter
 
 
-DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'data', 'jobs_with_demand.csv')
+DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'jobs_with_demand.csv')
 PLOT_DIR = os.path.join(os.path.dirname(__file__), 'static', 'plots')
 
 os.makedirs(PLOT_DIR, exist_ok=True)
