@@ -1,4 +1,4 @@
-# 📊 Job Market Analytics AI
+# 📊 Job Market Analytics
 
 A premium, data-driven web application that leverages Machine Learning to predict job demand and provide intelligent career insights. This project uses a Random Forest classifier trained on 1,000+ job postings to analyze the market and help job seekers optimize their career paths.
 
