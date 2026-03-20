@@ -1,4 +1,5 @@
-# Job Market Analytics - Final Production v1.0.1
+import matplotlib
+matplotlib.use('Agg')
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 import joblib
 import numpy as np
@@ -29,6 +30,9 @@ def load_model(filename):
     if os.path.exists(fallback):
         return joblib.load(fallback)
     raise FileNotFoundError(f"Model file not found: {filename}")
+
+# Initialize models to None to avoid NameErrors if loading fails
+model = tfidf = le_loc = le_ind = None
 
 try:
     model = load_model("job_demand_model.pkl")
@@ -166,10 +170,13 @@ market_insights = get_market_insights()
 
 @app.route("/")
 def home():
+    l_classes = le_loc.classes_ if le_loc is not None else []
+    i_classes = le_ind.classes_ if le_ind is not None else []
+    
     return render_template(
         "index.html",
-        locations=le_loc.classes_,
-        industries=le_ind.classes_,
+        locations=l_classes,
+        industries=i_classes,
         insights=market_insights
     )
 
@@ -187,6 +194,10 @@ def predict():
 
     experience = min(max(experience, 0), 20)
     salary = min(max(salary, 2), 50)
+
+    if any(m is None for m in [model, tfidf, le_loc, le_ind]):
+        flash("System is currently recovering. Please try again in a few moments.")
+        return redirect(url_for('home'))
 
     skill_vec = tfidf.transform([skills]).toarray()
     loc_enc = le_loc.transform([location])[0]
@@ -251,7 +262,12 @@ def dashboard():
     return render_template("dashboard.html", summary=summary, current_role=role_filter, current_salary=min_salary)
 
 TRADES_PATH = os.path.join(BASE_DIR, 'data', 'trades.csv')
-os.makedirs(os.path.dirname(TRADES_PATH), exist_ok=True)
+# Only create directory if it doesn't exist to avoid issues on read-only FS
+if not os.path.exists(os.path.dirname(TRADES_PATH)):
+    try:
+        os.makedirs(os.path.dirname(TRADES_PATH), exist_ok=True)
+    except OSError:
+        pass
 
 @app.route('/trade', methods=['GET', 'POST'])
 def trade():
